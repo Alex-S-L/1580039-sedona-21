@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__decoration">
+        </div>
+        <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__close-button" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        <ul class="main-nav__list" >
+          <li class="main-nav__item">
+            <a href="">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Фото и видео</a>
+          </li>
+          <li class="main-nav__iteme">
+            <a href="">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="logo-decoration page-header__logo-decoration">
+        <a href="" class="page-header-logo">
+          <img src="#" alt="Город Седона" width="282" height="214">
+        </a>
+      </div>
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Каталог</h1>
+
+      <header class="main-header page-main__header">
+        <div class="page-main__wrapper">
+          <p class="main-header__title">Фото и видео</p>
+          <p class="main-header__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+      </header>
+
+      <section class="gallery">
+        <h2 class="visually-hidden">Фото</h2>
+        <div class="page-main__wrapper">
+          <ul class="gallery__list">
+            <li class="gallery__item gallery__item--main">
+              <img class="gallery__photo gallery__photo--main" src="#" alt="Дорога на фоне гор при закате">
+              <footer class="photo-info gallery__photo-info">
+                <h3 class="photo-info__name">Неродные просторы</h3>
+                <p class="photo-info__author">Автор фото: <cite class=photo-info__author-name>Борис</cite></p>
+                <p class="photo-info__evaluation"><button class="photo-info__like"></button><span class="photo-info__like-counter">1350</span></p>
+              </footer>
+            </li>
+            <li class="gallery__item gallery__item--main">
+              <img class="gallery__photo gallery__photo--main" src="#" alt="Цветущий кактус на фоне гор">
+              <footer class="photo-info gallery__photo-info">
+                <h3 class="photo-info__name">Местная растительность</h3>
+                <p class="photo-info__author">Автор фото: <cite class=photo-info__author-name>Сергей</cite></p>
+                <p class="photo-info__evaluation"><button class="photo-info__like"></button><span class="photo-info__like-counter">145</span></p>
+              </footer>
+            </li>
+            <li class="gallery__item gallery__item--main">
+              <img class="gallery__photo gallery__photo--main" src="#" alt="Извилистая дорога по склону вниз среди леса">
+              <footer class="photo-info gallery__photo-info">
+                <h3 class="photo-info__name">Дорога на север</h3>
+                <p class="photo-info__author">Автор фото: <cite class=photo-info__author-name>Петр</cite></p>
+                <p class="photo-info__evaluation"><button class="photo-info__like"></button><span class="photo-info__like-counter">96</span></p>
+              </footer>
+            </li>
+            <li class="gallery__item gallery__item--main">
+              <img class="gallery__photo gallery__photo--main" src="#" alt="Тонкая каменная перемычка между двумя сторонами каньона">
+              <footer class="photo-info gallery__photo-info">
+                <h3 class="photo-info__name">Мост дьявола</h3>
+                <p class="photo-info__author">Автор фото: <cite class=photo-info__author-name>Антон</cite></p>
+                <p class="photo-info__evaluation"><button class="photo-info__like" type="button" aria-label="лайк"></button><span class="photo-info__like-counter">254</span></p>
+              </footer>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="presentation">
+        <h2 class="visually-hidden">Видеопрезентация</h2>
+        <p class="presentation__title">Все еще сомневаетесь?</p>
+        <p class="presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <div class="video presentation__video">
+          <video class="video__player" src="#">
+          </video>
+          <div class="video__controls video__controls--not-small">
+            <div class="video__wrapper">
+              <button class="video__replay" aria-label="Реплей"></button>
+              <button class="video__subtitles" aria-label="Субтитры"></button>
+              <button class="video__size" aria-label="Размер"></button>
+              <!-- Я вообще без понятия как это должно выглядеть и как делать кастомные кнопки для видео, пока оставлю так, может дальше будет понятнее -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="social page-footer__social">
+          <b class="social__title">#visitsedona</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="">
+                <span class="visually-hidden">Ю-туб</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__title">Разработано</span>
+          <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+          </svg>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
