@@ -8,29 +8,26 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__decoration">
-          <!-- Пока слабо представляю как сделать треугольный элемент. Думал, что можно просто псевдоэлементом повесить, но увидев, что он сильно отличается в различных версиях, усомнился. Пусть пока торчит дивом. -->
         </div>
         <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <button class="main-nav__close-button" type="button"><span class="visually-hidden">Закрыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class=" site-list main-nav__list" >
-            <li class="site-list__item site-list__item--active">
-              <a href="">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="">Фото и видео</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="">Форма отзыва</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="">Html Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list" >
+          <li class="main-nav__item">
+            <a href="">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Фото и видео</a>
+          </li>
+          <li class="main-nav__iteme">
+            <a href="">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Html Academy</a>
+          </li>
+        </ul>
       </nav>
       <div class="logo-decoration page-header__logo-decoration">
-        <a href="" class="page-header-logo">
+        <a href="" class="page-header__logo">
           <img src="#" alt="Город Седона" width="282" height="214">
         </a>
       </div>
@@ -40,21 +37,24 @@
 
       <h1 class="visually-hidden">Городок Седона</h1>
 
-      <section class="reason page__reason">
-        <div class="reason__wrapper">
-          <h2 class="visually-hidden">Причины посетить Седону</h2>
-          <header class="reason__header">
-            <p class="reason__blameing">Седона — небольшой городок в Аризоне,  заслуживающий большего!  </p>
-            <p class="reason__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-          </header>
+      <header class="main-header page-main__header">
+        <div class="page-main__wrapper">
+          <p class="main-header__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="main-header__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </header>
 
-          <section class="reason-one reason__section">
-            <div class="reason-one__wrapper">
-               <h3 class="reason-title reason__section-title">Настоящий городок</h3>
-               <p class="reason__index">-№1-</p>
-               <p class="reason__comment">Седона не аттракцион для туристов, там течет своя жизнь</p>
-               <img class="reason__picture" src="#" alt="Двухэтажное здание посреди улицы на фоне гор." width="520" height="260">
-             </div>
+      <div class="page-main__wrapper">
+        <section class="reason page-main__reason">
+          <h2 class="visually-hidden">Причины посетить Седону</h2>
+
+          <section class="reason-one">
+            <div class="reason-info reason-one__info">
+              <h3 class="reason-title">Настоящий городок</h3>
+              <p class="reason__index">-№1-</p>
+              <p class="reason__comment">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <img class="reason-one__picture" src="#" alt="Двухэтажное здание посреди улицы на фоне гор." width="520" height="260">
             <ul class="reason-one-list reason-one__features">
               <li class="reason-one-list__item">
                 <p class="reason-one-list__title reason-one-list__title--housing">Жилье</p>
@@ -71,62 +71,68 @@
             </ul>
           </section>
 
-          <section class="reason-two reason__section">
-            <div class="reason-two__wrapper">
-              <h3 class="reason-title reason__section-title">Там есть мост дьявола</h3>
+          <section class="reason-two">
+            <div class="reason-info reason-two__info">
+              <h3 class="reason-title">Там есть мост дьявола</h3>
               <p class="reason__index">-№2-</p>
               <p class="reason__comment">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-              <img class="reason__picture" src="#" alt="Вид на тонкую перемычку природного происхождения пежду двумя сторонами карьона" width="520" height="260">
+            </div>
+              <img class="reason-two__picture" src="#" alt="Вид на тонкую перемычку природного происхождения пежду двумя сторонами карьона" width="520" height="260">
+          </section>
+
+          <section class="reason-three">
+            <div class="reason-info">
+              <h3 class="reason-title">Небольшая прощадь</h3>
+              <p class="reason__index">-№3-</p>
+              <p class="reason__comment">Все интересные места находятся очень близко</p>
             </div>
           </section>
 
-          <section class="reason-three reason__section">
-            <h3 class="reason-title reason__section-title">Небольшая прощадь</h3>
-            <p class="reason__index">-№3-</p>
-            <p class="reason__comment">Все интересные места находятся очень близко</p>
+          <section class="reason-four">
+            <div class="reason-info">
+              <h3 class="reason-title">Красивая дорога</h3>
+              <p class="reason__index">-№4-</p>
+              <p class="reason__comment">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
           </section>
 
-          <section class="reason-four reason__section">
-            <h3 class="reason-title reason__section-title">Красивая дорога</h3>
-            <p class="reason__index">-№4-</p>
-            <p class="reason__comment">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </section>
-
-          <section class="reason-five reason__section">
-            <h3 class="reason-title reason__section-title">Мало туристов</h3>
-            <p class="reason__index">-№5-</p>
-            <p class="reason__comment">Большинство едет в Гранд Каньон и толпится там</p>
+          <section class="reason-five">
+            <div class="reason-info">
+              <h3 class="reason-title">Мало туристов</h3>
+              <p class="reason__index">-№5-</p>
+              <p class="reason__comment">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
           </section>
 
           <div class="interest reason__interest">
-            <p class="interest__title">Заинтересовались?  </p>
-            <p class="interest__instruction">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <p class="interest__title">Заинтересовались?</p>
+            <p class="interest__instruction">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <a href="" class="interest__redirection">Найти гостиницу</a>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__map map">
+        <div class="map page-footer__map">
         </div>
-        <div class="social-lincs page-footer__social-lincs">
-          <b class="social-lincs__title">#visitsedona</b>
-          <ul class="social-lincs__list">
-            <li class="cosial-lincs__item">
-              <a class="cosial-lincs__item--instagram" href="">
+        <div class="social page-footer__social">
+          <b class="social__title">#visitsedona</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
-            <li class="cosial-lincs__item">
-              <a class="cosial-lincs__item--facebook" href="">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
-            <li class="cosial-lincs__item">
-              <a class="cosial-lincs__item--youtube" href="">
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="">
                 <span class="visually-hidden">Ю-туб</span>
               </a>
             </li>
@@ -139,7 +145,6 @@
           </svg>
         </div>
       </div>
-
     </footer>
 
   </body>

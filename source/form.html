@@ -11,22 +11,20 @@
         </div>
         <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <button class="main-nav__close-button" type="button"><span class="visually-hidden">Закрыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class=" site-list main-nav__list" >
-            <li class="site-list__item site-list__item--active">
-              <a href="">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="">Фото и видео</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="">Форма отзыва</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="">Html Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list" >
+          <li class="main-nav__item">
+            <a href="">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Фото и видео</a>
+          </li>
+          <li class="main-nav__iteme">
+            <a href="">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Html Academy</a>
+          </li>
+        </ul>
       </nav>
       <div class="logo-decoration page-header__logo-decoration">
         <a href="" class="page-header-logo">
@@ -35,90 +33,120 @@
       </div>
     </header>
 
-    <main class="form-page-main">
+    <main class="page-main">
+
       <h1 class="visually-hidden">Форма обратной связи</h1>
-      <header class="form-page-header form-page-main__header">
-        <p class="form-title form-page-header__title"></p>
-        <p class="form-page-header__request"></p>
+
+      <header class="main-header page-main__header">
+        <div class="page-main__wrapper">
+          <p class="main-header__title">Оставьте свой отзыв</p>
+          <p class="main-header__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посешенных вами достопримечательностях</p>
+        </div>
       </header>
-      <form class="form page__form" action="#" method="post">
-        <fieldset class="form-fieldset form__naming-group">
-          <legend class="visually-hidden">Представьтесь:</legend>
-          <p class="form-title fieldset__title">Представьтесь:</p>
-          <label class="get-text-label" for="first-name">Имя*:</label>
-          <input class="input-text form-input__text form-input__text--active" type="text" id="first-name" name="first-name" placeholder="Пётр" pattern="[A-Za-zА-Яа-яЁё]{15}">
-          <label class="get-text-label" for="last-name">Фамилия*:</label>
-          <input class="input-text form-input__text form-input__text--active" type="text" id="last-name" name="last-name" placeholder="Иванов" pattern="[A-Za-zА-Яа-яЁё]{15}">
-          <label class="get-text-label" for="patronymic">Отчество:</label>
-          <input class="input-text form-input__text form-input__text--active" type="text" id="patronymic" name="patronymic" placeholder="Александрович" pattern="[A-Za-zА-Яа-яЁё]{15}">
-        </fieldset>
 
-        <fieldset class="form-fieldset form__contacs-group">
-          <legend class="visually-hidden">Контактная информация:</legend>
-          <p class="form-title fieldset__title">Контактная информация:</p>
-          <label class="get-text-label" for="phone">Имя*:</label><br>
-          <input class="input-text form-input__text form-input__text--active" type="number" id="phone" name="phone" placeholder="Введите телефон">
-          <div class="phone-decoration contacts_decoration"></div>
-          <label class="get-text-label" for="email">Фамилия*:</label><br>
-          <input class="input-text form-input__text form-input__text--active" type="email" id="email" name="phone" placeholder="Введите e-mail">
-          <div class="phone-decoration contacts_decoration"></div>
-        </fieldset>
+      <div class="page-main__wrapper">
+        <form class="form page-main__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form-fieldset form__naming-group">
+            <legend class="visually-hidden">Представьтесь:</legend>
+            <p class="form-title form__title">Представьтесь:</p>
+            <div class="form__naming-unit">
+              <label class="get-text-label" for="first-name">Имя*:</label>
+              <input class="form__input-text" type="text" id="first-name" name="first-name" placeholder="Пётр" pattern="[A-Za-zА-Яа-яЁё]{15}">
+            </div>
+            <div class="form__naming-unit">
+              <label class="get-text-label" for="last-name">Фамилия*:</label>
+              <input class="form__input-text" type="text" id="last-name" name="last-name" placeholder="Иванов" pattern="[A-Za-zА-Яа-яЁё]{15}">
+            </div>
+            <div class="form__naming-unit">
+              <label class="get-text-label" for="patronymic">Отчество:</label>
+              <input class="form__input-text" type="text" id="patronymic" name="patronymic" placeholder="Александрович" pattern="[A-Za-zА-Яа-яЁё]{15}">
+            </div>
+          </fieldset>
 
-        <fieldset class="form-fieldset form__impressions-group">
-          <legend class="visually-hidden">Ваше общее впечатление:</legend>
-          <p class="form-title fieldset__title">Ваше общее впечатление:</p>
-          <input class="visually-hidden" type="radio" name="impressions" id="rather-positive" checked>
-          <label class="radio-label form-impressions__label form-impressions__label--active" for="rather-positive">Скорее положительное</label>
-          <input class="visually-hidden" type="radio" name="impressions" id="rather-negagive">
-          <label class="radio-label form-impressions__label form-impressions__label--active" for="rather-negagive">Скорее отрицательное</label>
-          <input class="visually-hidden" type="radio" name="impressions" id="unsure">
-          <label class="radio-label form-impressions__label form-impressions__label--active" for="unsure">Затрудняюсь ответить</label>
-        </fieldset>
+          <fieldset class="form-fieldset form__contacs-group">
+            <legend class="visually-hidden">Контактная информация:</legend>
+            <p class="form-title form__title">Контактная информация:</p>
+            <div class="from-contacts-unit">
+              <label class="get-text-label" for="phone">Имя*:</label>
+              <input class="form__input-text" type="number" id="phone" name="phone" placeholder="Введите телефон">
+              <div class="phone-decoration contacts_decoration"></div>
+            </div>
+            <div class="from-contacts-unit">
+              <label class="get-text-label" for="email">Фамилия*:</label>
+              <input class="form__input-text" type="email" id="email" name="phone" placeholder="Введите e-mail">
+              <div class="phone-decoration contacts_decoration"></div>
+            </div>
+          </fieldset>
 
-        <fieldset class="form-fieldset form__landmarks-group">
-          <legend class="visually-hidden">Посещенные достопримечательности:</legend>
-          <p class="form-title fieldset__title">Посещенные достопримечательности:</p>
-          <input class="visually-hidden" type="checkbox" name="bridge" id="bridge" checked>
-          <label class="checkbox-label form-landmarks__label form-landmarks__label--active" for="bridge">Мост Дьявола</label>
-          <input class="visually-hidden" type="checkbox" name="mountain" id="mountain" checked>
-          <label class="checkbox-label form-landmarks__label form-landmarks__label--active" for="mountain">Гора-Колокол</label>
-          <input class="visually-hidden" type="checkbox" name="slide-park" id="slide-park" checked>
-          <label class="checkbox-label form-landmarks__label form-landmarks__label--active" for="slide-park">Слайд-парк</label>
-          <input class="visually-hidden" type="checkbox" name="red-rock" id="red-rock">
-          <label class="checkbox-label form-landmarks__label form-landmarks__label--active" for="red-rock">Красные скалы</label>
-        </fieldset>
+          <fieldset class="form-fieldset form__impressions-group">
+            <legend class="visually-hidden">Ваше общее впечатление:</legend>
+            <p class="form-title form__title">Ваше общее впечатление:</p>
+            <div class="form__radio-unit">
+              <input class="visually-hidden" type="radio" name="impressions" id="rather-positive" checked>
+              <label class="radio-label form__impression-label" for="rather-positive">Скорее положительное</label>
+            </div>
+            <div class="form__radio-unit">
+              <input class="visually-hidden" type="radio" name="impressions" id="rather-negagive">
+              <label class="radio-label form__impression-label" for="rather-negagive">Скорее отрицательное</label>
+            </div>
+            <div class="form__radio-unit">
+              <input class="visually-hidden" type="radio" name="impressions" id="unsure">
+              <label class="radio-label form__impression-label" for="unsure">Затрудняюсь ответить</label>
+            </div>
+          </fieldset>
 
-        <fieldset class="form-fieldset form__describe-emotions-group">
-          <legend class="visually-hidden">Опишите свои эмоции</legend>
-          <p class="form-title fieldset__title">Опишите свои эмоции</p>
-          <textarea class="describe-emotions__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
-        </fieldset>
+          <fieldset class="form-fieldset form__landmarks-group">
+            <legend class="visually-hidden">Посещенные достопримечательности:</legend>
+            <p class="form-title form__title">Посещенные достопримечательности:</p>
+            <div class="form__checkbox-unit">
+              <input class="visually-hidden" type="checkbox" name="bridge" id="bridge" checked>
+              <label class="checkbox-label form__landmark-label" for="bridge">Мост Дьявола</label>
+            </div>
+            <div class="form__checkbox-unit">
+              <input class="visually-hidden" type="checkbox" name="mountain" id="mountain" checked>
+              <label class="checkbox-label form__landmark-label" for="mountain">Гора-Колокол</label>
+            </div>
+            <div class="form__checkbox-unit">
+              <input class="visually-hidden" type="checkbox" name="slide-park" id="slide-park" checked>
+              <label class="checkbox-label form__landmark-label" for="slide-park">Слайд-парк</label>
+            </div>
+            <div class="form__checkbox-unit">
+              <input class="visually-hidden" type="checkbox" name="red-rock" id="red-rock">
+              <label class="checkbox-label form__landmark-label" for="red-rock">Красные скалы</label>
+            </div>
+          </fieldset>
 
-        <button class="button button--action form-send__button" type="submit">Отправить отзыв</button>
+          <fieldset class="form-fieldset form__describe-emotions-group">
+            <legend class="visually-hidden">Опишите свои эмоции</legend>
+            <p class="form-title form__title">Опишите свои эмоции</p>
+            <textarea class="form__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
 
-      </form>
+          <button class="button form__cend-button" type="submit">Отправить отзыв</button>
+        </form>
+      </div>
 
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__map map">
+        <div class="map page-footer__map">
         </div>
-        <div class="social-lincs page-footer__social-lincs">
-          <b class="social-lincs__title">#visitsedona</b>
-          <ul class="social-lincs__list">
-            <li class="cosial-lincs__item">
-              <a class="cosial-lincs__item--instagram" href="">
+        <div class="social page-footer__social">
+          <b class="social__title">#visitsedona</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
-            <li class="cosial-lincs__item">
-              <a class="cosial-lincs__item--facebook" href="">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
-            <li class="cosial-lincs__item">
-              <a class="cosial-lincs__item--youtube" href="">
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="">
                 <span class="visually-hidden">Ю-туб</span>
               </a>
             </li>
@@ -131,7 +159,6 @@
           </svg>
         </div>
       </div>
-
     </footer>
 
   </body>
