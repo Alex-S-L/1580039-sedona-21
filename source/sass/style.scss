@@ -1,1 +1,24 @@
-// Начните писать стили здесь
+// over-all
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/logo-decoration.scss";
+@import "blocks/page-main";
+@import "blocks/main-header";
+@import "blocks/button";
+@import "blocks/page-footer";
+@import "blocks/map";
+@import "blocks/social";
+@import "blocks/copyright";
+
+// index
+@import "blocks/index/reason";
+@import "blocks/index/reason-one";
+@import "blocks/index/reason-two";
+@import "blocks/index/reason-three";
+@import "blocks/index/reason-four";
+@import "blocks/index/reason-five";
+@import "blocks/index/reason-info";
+@import "blocks/index/interest";

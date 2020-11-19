@@ -3,32 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__decoration">
         </div>
-        <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <button class="main-nav__close-button" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        <button class="main-nav__close-button" type="button" aria-lable="Открыть меню">
+          <svg class="main-nav__close-cross" width="23" height="23" viewBox="0 0 23 23" fill="none">
+            <line x1="1" y1="1" x2="22" y2="22" stroke-width="3"/>
+            <line x1="1" y1="22" x2="22" y2="1" stroke-width="3"/>
+          </svg>
+        </button>
+        <button class="main-nav__open-button" type="button" aria-lable="Открыть меню">
+          <svg class="main-nav__open-lines" width="23" height="23" viewBox="0 0 23 23" fill="none">
+            <line x1="0" y1="2" x2="23" y2="2" stroke-width="4"/>
+            <line x1="0" y1="11" x2="23" y2="11" stroke-width="4"/>
+            <line x1="0" y1="20" x2="23" y2="20" stroke-width="4"/>
+          </svg>
+        </button>
         <ul class="main-nav__list" >
           <li class="main-nav__item">
-            <a href="">Главная</a>
+            <a class="main-nav__link" href="">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="">Фото и видео</a>
-          </li>
-          <li class="main-nav__iteme">
-            <a href="">Форма отзыва</a>
+            <a class="main-nav__link" href="">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a href="">Html Academy</a>
+            <a class="main-nav__link" href="">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">Html Academy</a>
           </li>
         </ul>
       </nav>
       <div class="logo-decoration page-header__logo-decoration">
         <a href="" class="page-header__logo">
-          <img src="#" alt="Город Седона" width="282" height="214">
+          <img src="../img/sedona-logo.png" alt="Город Седона" width="282" height="49">
         </a>
       </div>
     </header>
@@ -50,64 +62,64 @@
 
           <section class="reason-one">
             <div class="reason-info reason-one__info">
-              <h3 class="reason-title">Настоящий городок</h3>
-              <p class="reason__index">-№1-</p>
-              <p class="reason__comment">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <h3 class="reason-info__title">Настоящий городок</h3>
+              <p class="reason-info__index">-№1-</p>
+              <p class="reason-info__comment">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <img class="reason-one__picture" src="#" alt="Двухэтажное здание посреди улицы на фоне гор." width="520" height="260">
-            <ul class="reason-one-list reason-one__features">
-              <li class="reason-one-list__item">
-                <p class="reason-one-list__title reason-one-list__title--housing">Жилье</p>
-                <p class="reason-one-list__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <ul class="reason-one__list">
+              <li class="reason-one__item">
+                <p class="reason-one__item-title reason-one__item-title--housing">Жилье</p>
+                <p class="reason-one__item-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="reason-one-list__item">
-                <p class="reason-one-list__title reason-one-list__title--souvenirs">Сувениры</p>
-                <p class="reason-one-list__description">Не только китайского, но и местного производства!</p>
+              <li class="reason-one__item">
+                <p class="reason-one__item-title reason-one__item-title--souvenir">Сувениры</p>
+                <p class="reason-one__item-description">Не только китайского, но и местного производства!</p>
               </li>
-              <li class="reason-one-list__item">
-                <p class="reason-one-list__title reason-one-list__title--food">Еда</p>
-                <p class="reason-one-list__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+              <li class="reason-one__item">
+                <p class="reason-one__item-title reason-one__item-title--food">Еда</p>
+                <p class="reason-one__item-description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
               </li>
             </ul>
           </section>
 
           <section class="reason-two">
             <div class="reason-info reason-two__info">
-              <h3 class="reason-title">Там есть мост дьявола</h3>
-              <p class="reason__index">-№2-</p>
-              <p class="reason__comment">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <h3 class="reason-info__title">Там есть мост дьявола</h3>
+              <p class="reason-info__index">-№2-</p>
+              <p class="reason-info__comment">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-              <img class="reason-two__picture" src="#" alt="Вид на тонкую перемычку природного происхождения пежду двумя сторонами карьона" width="520" height="260">
+              <img class="reason-two__picture" src="#" alt="Вид на тонкую перемычку природного происхождения пежду двумя сторонами каньона" width="520" height="260">
           </section>
 
           <section class="reason-three">
-            <div class="reason-info">
-              <h3 class="reason-title">Небольшая прощадь</h3>
-              <p class="reason__index">-№3-</p>
-              <p class="reason__comment">Все интересные места находятся очень близко</p>
+            <div class="reason-info reason-info--color">
+              <h3 class="reason-info__title">Небольшая прощадь</h3>
+              <p class="reason-info__index">-№3-</p>
+              <p class="reason-info__comment">Все интересные места находятся очень близко</p>
             </div>
           </section>
 
           <section class="reason-four">
-            <div class="reason-info">
-              <h3 class="reason-title">Красивая дорога</h3>
-              <p class="reason__index">-№4-</p>
-              <p class="reason__comment">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <div class="reason-info reason-info--color">
+              <h3 class="reason-info__title">Красивая дорога</h3>
+              <p class="reason-info__index">-№4-</p>
+              <p class="reason-info__comment">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </section>
 
           <section class="reason-five">
-            <div class="reason-info">
-              <h3 class="reason-title">Мало туристов</h3>
-              <p class="reason__index">-№5-</p>
-              <p class="reason__comment">Большинство едет в Гранд Каньон и толпится там</p>
+            <div class="reason-info reason-info--color">
+              <h3 class="reason-info__title">Мало туристов</h3>
+              <p class="reason-info__index">-№5-</p>
+              <p class="reason-info__comment">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </section>
 
           <div class="interest reason__interest">
             <p class="interest__title">Заинтересовались?</p>
             <p class="interest__instruction">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <a href="" class="interest__redirection">Найти гостиницу</a>
+            <a href="" class="button interest__redirection">Найти гостиницу</a>
           </div>
         </section>
       </div>
@@ -122,8 +134,8 @@
           <b class="social__title">#visitsedona</b>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="">
-                <span class="visually-hidden">Инстаграм</span>
+              <a class="social__link social__link--twitter" href="">
+                <span class="visually-hidden">Твиттер</span>
               </a>
             </li>
             <li class="social__item">
@@ -138,10 +150,10 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
+        <div class="copyright page-footer__copyright">
           <span class="copyright__title">Разработано</span>
-          <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+          <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
           </svg>
         </div>
       </div>
