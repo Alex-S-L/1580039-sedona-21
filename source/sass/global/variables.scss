@@ -1,0 +1,21 @@
+// colors
+$basic-blue: #81b3d2;
+$hover-blue: #669ec0;
+$item-down-blue: #5496bd;
+$basic-grey: #eeeeee;
+
+// global-colors
+
+$nav-color: $basic-blue;
+
+// font-paramets
+$basic-black: #000000;
+$basic-white: #ffffff;
+
+// mixins
+@mixin font ($font-weight, $font-size, $line-height, $color) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}

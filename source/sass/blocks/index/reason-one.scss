@@ -1,0 +1,40 @@
+.reason-one__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reason-one__item-title {
+  @include font (700, 18px, 26px, $basic-black);
+  text-align: left;
+  position: relative;
+}
+
+.reason-one__item-description {
+  @include font (400, 14px, 21px, $basic-black);
+  text-align: left;
+}
+
+.reason-one__item-title--housing::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/index/icon-house.svg");
+}
+
+.reason-one__item-title--souvenir::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 38px;
+  background-image: url("../img/index/icon-gift.svg");
+}
+
+.reason-one__item-title--food::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  background-image: url("../img/index/icon-burger.svg");
+}

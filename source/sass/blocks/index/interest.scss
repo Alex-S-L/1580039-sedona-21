@@ -1,0 +1,7 @@
+.interest__title {
+  @include font (700, 21px, 26px, $basic-black);
+}
+
+.interest__instruction {
+  @include font (400, 14px, 24px, $basic-black);
+}

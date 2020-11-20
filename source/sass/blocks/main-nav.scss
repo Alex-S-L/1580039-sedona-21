@@ -1,0 +1,32 @@
+.main-nav__close-button {
+  border: none;
+}
+
+.main-nav__close-cross {
+  stroke: $basic-white;
+}
+
+.main-nav__open-button {
+  border: none;
+}
+
+.main-nav__open-lines {
+  stroke: $basic-blue;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  background-color: $nav-color;
+}
+
+.main-nav__link {
+  @include font (700, 18px, 40px, $basic-white);
+  text-decoration: none;
+  display: block;
+  padding: 10px 78px 5px 77px;
+}

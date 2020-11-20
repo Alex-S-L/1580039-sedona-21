@@ -1,0 +1,19 @@
+.reason-info {
+  background-color: $basic-blue;
+}
+
+.reason-info--color {
+  background-color: $basic-grey;
+}
+
+.reason-info__title {
+  @include font (700, 18px, 26px, $basic-black);
+}
+
+.reason-info__index {
+  @include font (400, 14px, 21px, $basic-black);
+}
+
+.reason-info__comment {
+  @include font (400, 14px, 21px, $basic-black);
+}
