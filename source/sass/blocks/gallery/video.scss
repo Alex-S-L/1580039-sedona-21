@@ -1,0 +1,22 @@
+.video__button {
+  border: none;
+  position: relative;
+}
+
+.video__replay,
+.video__subtitles,
+.video__fullscreen {
+  fill: none;
+}
+
+.video__element-outline {
+  fill: $strange-grey;
+}
+
+.video__button:hover .video__element-outline {
+  fill: $dark-grey;
+}
+
+.video__button:active .video__element-outline {
+  opacity: 0.3;
+}

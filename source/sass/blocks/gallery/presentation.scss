@@ -1,0 +1,7 @@
+.presentation__title {
+  @include font (700, 18px, 26px, $basic-black);
+}
+
+.presentation__text {
+  @include font (400, 14px, 24px, $dark-grey);
+}
