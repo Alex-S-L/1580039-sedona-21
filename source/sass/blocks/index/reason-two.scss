@@ -1,0 +1,15 @@
+@media (min-width: $tablet) {
+  .reason-two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .reason-two__info {
+    grid-column: -2/-1;
+  }
+
+  .reason-two__picture {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+}

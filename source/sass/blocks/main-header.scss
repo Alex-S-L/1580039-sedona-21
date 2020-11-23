@@ -4,6 +4,10 @@
 
 .main-header__title {
   @include font (700, 18px, 26px, $basic-black);
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+  }
 }
 
 .main-header__text {

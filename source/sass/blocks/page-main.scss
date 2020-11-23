@@ -1,0 +1,30 @@
+@media (max-width: $mobile) {
+  .page-main__wrapper {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .page-main__header {
+    width: 270px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet) {
+  .page-main__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .page-main__header {
+    width: 490px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-main__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

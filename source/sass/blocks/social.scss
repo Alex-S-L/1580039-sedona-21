@@ -1,8 +1,9 @@
-.social__title {
+.page-footer__title {
   @include font (700, 21px, 26px, $basic-black);
 }
 
 .social__list {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;

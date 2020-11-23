@@ -1,13 +1,30 @@
 .logo-decoration {
-  width: 320px;
   height: 389px;
-  background-size: 320px 389px;
-  background-image: url("../img/index/m-sedona-intro.jpg");
+  display: flex;
+  justify-content: center;
+  background: url("../img/index/pre-logo.svg") no-repeat 50% 90px,
+    url("../img/index/post-logo.svg") no-repeat 50% 258px,
+    url("../img/intro-bottom.svg") no-repeat 50% 100%,
+    url("../img/intro-back.jpg") no-repeat 50% 0%;
+
+  @media (min-width: $tablet) {
+    height: 518px;
+    background: url("../img/index/pre-logo.svg") no-repeat 50% 77px / 257px 85px,
+      url("../img/index/post-logo.svg") no-repeat 50% 352px / 283px 75px,
+      url("../img/intro-bottom.svg") no-repeat 50% 100%,
+      url("../img/intro-back.jpg") no-repeat 50% 0%;
+  }
 }
 
-.logo-decoration--background {
-  width: 320px;
-  height: 158px;
-  background-size: 320px 389px;
-  background-image: url("../img/form/m-form-intro.jpg");
+.page-header__logo {
+  margin-top: 173px;
+
+  @media (min-width: $tablet) {
+    margin-top: 213px;
+
+    .page-header__logo-img {
+      width: 461px;
+      height: 80px;
+    }
+  }
 }
