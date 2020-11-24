@@ -2,18 +2,34 @@
   background-color: $basic-blue;
 }
 
+.reason-info__title {
+  @include font (700, 18px, 26px, $basic-white);
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+  }
+}
+
+.reason-info__index {
+  @include font (400, 14px, 21px, $basic-white);
+}
+
+.reason-info__comment {
+  @include font (400, 14px, 21px, $basic-white);
+}
+
 .reason-info--color {
   background-color: $basic-grey;
 }
 
-.reason-info__title {
-  @include font (700, 18px, 26px, $basic-black);
+.reason-info__title--color {
+  color: $basic-black;
 }
 
-.reason-info__index {
-  @include font (400, 14px, 21px, $basic-black);
+.reason-info__index--color {
+  color: $dark-grey;
 }
 
-.reason-info__comment {
-  @include font (400, 14px, 21px, $basic-black);
+.reason-info__comment--color {
+  color: $dark-grey;
 }

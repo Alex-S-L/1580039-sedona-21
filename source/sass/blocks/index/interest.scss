@@ -1,5 +1,15 @@
+.interest {
+  @media (min-width: $tablet) {
+    width: 435px;
+    margin: 0 auto;
+  }
+}
 .interest__title {
   @include font (700, 21px, 26px, $basic-black);
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+  }
 }
 
 .interest__instruction {

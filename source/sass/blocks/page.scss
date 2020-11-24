@@ -1,7 +1,13 @@
-body {
+.page {
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   text-align: center;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
 }
 
 .visually-hidden {
