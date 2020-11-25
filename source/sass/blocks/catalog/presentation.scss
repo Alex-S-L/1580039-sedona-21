@@ -1,0 +1,31 @@
+.presentation {
+  @media (max-width: $mobile) {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet) {
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.presentation__header {
+  @media (min-width: $tablet) {
+    width: 445px;
+    margin: 0 auto;
+  }
+}
+
+.presentation__title {
+  @include font (700, 18px, 26px, $basic-black);
+}
+
+.presentation__text {
+  @include font (400, 14px, 24px, $dark-grey);
+}

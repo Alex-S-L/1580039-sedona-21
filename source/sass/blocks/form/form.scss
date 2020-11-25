@@ -25,7 +25,7 @@
       grid-column: 1/-1;
     }
 
-    .form__send-button {
+    .form__send-group {
       grid-column: 1/-1;
     }
   }
@@ -220,6 +220,11 @@
   text-transform: none;
 }
 
+.form__send-group {
+  display: flex;
+  justify-content: space-between;
+}
+
 .form__send-button {
   @media (min-width: $tablet) {
     width: 324px;
@@ -230,6 +235,10 @@
   }
 }
 
-.form-legend {
+.form__legend {
   display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
 }
