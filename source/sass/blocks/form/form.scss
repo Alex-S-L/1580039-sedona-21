@@ -1,11 +1,49 @@
-.form-fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
+.form {
+  display: grid;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    width: 648px;
+    margin: 0 auto;
+    grid-column-gap: 80px;
+
+    .form__impressions-group {
+      order: -1;
+    }
+
+    .form__contacs-group {
+      grid-column: 1/-1;
+    }
+
+    .form__landmarks-group {
+      grid-column: 1/-1;
+    }
+
+    .form__describe-emotions-group {
+      grid-column: 1/-1;
+    }
+
+    .form__send-button {
+      grid-column: 1/-1;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 960px;
+    grid-column-gap: 180px;
+    margin: 0 auto;
+  }
 }
 
 .form__title {
   @include font (700, 18px, 26px, $basic-black);
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+  }
 }
 
 .form__get-text-label {
@@ -44,8 +82,12 @@
   background: url("../img/form/email.svg") no-repeat center;
 }
 
-.form__radio-unit {
+.form__radio-item {
   margin: 25px 0;
+}
+
+.form__impressions-group {
+  margin-left: 30px;
 }
 
 .form__impression-label {
@@ -92,8 +134,42 @@
   margin: 25px 0;
 }
 
+.form__landmarks-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    width: 470px;
+    margin: 0 auto;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    width: 960px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+  }
+}
+
+.form__landmarks-item {
+  padding-left: 46px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    padding-left: 46px;
+    width: 160px;
+  }
+}
+
 .form__landmark-label {
   @include font (700, 18px, 26px, $basic-black);
+  display: block;
   text-transform: none;
   position: relative;
 }
@@ -135,13 +211,23 @@
 
 .form__textarea {
   padding: 13px 21px 29px;
-  width: 235px;
+  width: 100%;
   height: 118px;
 }
 
 .form__textarea::-webkit-input-placeholder {
   @include font (700, 18px, 26px, $dark-grey);
   text-transform: none;
+}
+
+.form__send-button {
+  @media (min-width: $tablet) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 480px;
+  }
 }
 
 .form-legend {

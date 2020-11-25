@@ -28,3 +28,30 @@
     }
   }
 }
+
+.logo-decoration--secondary {
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  background: url("../img/intro-bottom.svg") no-repeat 50% 100%,
+    url("../img/intro-back.jpg") no-repeat 50% 100%;
+
+  @media (min-width: $tablet) {
+    height: 290px;
+    background: url("../img/intro-bottom.svg") no-repeat 50% 100%,
+      url("../img/intro-back.jpg") no-repeat 50% 100%;
+  }
+}
+
+.page-header__logo--secondary {
+  margin-top: 52px;
+
+  @media (min-width: $tablet) {
+    margin-top: 95px;
+
+    .page-header__logo-img {
+      width: 461px;
+      height: 80px;
+    }
+  }
+}
