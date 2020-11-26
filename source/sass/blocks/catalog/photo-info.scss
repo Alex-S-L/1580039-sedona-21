@@ -1,0 +1,57 @@
+.photo-info {
+  text-align: left;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $basic-t-black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+.photo-info__name {
+  @include font (700, 14px, 24px, $basic-black);
+
+  @media (min-width: $desktop) {
+    color: $basic-white;
+  }
+}
+
+.photo-info__author {
+  @include font (400, 14px, 24px, $dark-grey);
+
+  @media (min-width: $desktop) {
+    color: $basic-white;
+  }
+}
+
+.photo-info__like-counter {
+  @include font (700, 14px, 24px, $basic-black);
+
+  @media (min-width: $desktop) {
+    color: $basic-white;
+  }
+}
+
+.photo-info__author-name {
+  font-style: normal;
+}
+
+.photo-info__like {
+  border: none;
+  background-color: transparent;
+}
+
+.photo-info__like-stroke {
+  @media (min-width: $desktop) {
+    stroke: $basic-white;
+    fill: $basic-white;
+    opacity: 1;
+  }
+}
