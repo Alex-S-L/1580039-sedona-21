@@ -28,3 +28,25 @@
   display: table;
   clear: both;
 }
+
+.page__text-formating {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.page__text-formating--tablet {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: inline;
+  }
+}
+
+.page__text-formating--desktop {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: inline;
+  }
+}

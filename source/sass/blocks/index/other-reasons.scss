@@ -1,5 +1,24 @@
 .other-reasons {
+  background-color: $basic-grey;
+
+  @media (max-width: $mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   @media (min-width: $tablet) {
     display: flex;
+    justify-content: space-around;
+  }
+}
+
+.other-reasons__reason {
+  @media (min-width: $tablet) {
+    width: 183px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 290px;
   }
 }

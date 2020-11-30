@@ -4,9 +4,15 @@
 
 .main-header__title {
   @include font (700, 18px, 26px, $basic-black);
+  margin: 34px 0 30px;
 
   @media (min-width: $tablet) {
     font-size: 21px;
+    padding-right: 3px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 55px 0 31px;
   }
 }
 

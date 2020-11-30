@@ -10,19 +10,10 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav">
-          <div class="main-nav__decoration">
-          </div>
-          <button class="main-nav__close-button" type="button" aria-lable="Открыть меню">
-            <svg class="main-nav__close-cross" width="23" height="23" viewBox="0 0 23 23" fill="none">
-              <line x1="1" y1="1" x2="22" y2="22" stroke-width="3"/>
-              <line x1="1" y1="22" x2="22" y2="1" stroke-width="3"/>
-            </svg>
-          </button>
-          <button class="main-nav__open-button" type="button" aria-lable="Открыть меню">
-            <svg class="main-nav__open-lines" width="23" height="23" viewBox="0 0 23 23" fill="none">
-              <line x1="0" y1="2" x2="23" y2="2" stroke-width="4"/>
-              <line x1="0" y1="11" x2="23" y2="11" stroke-width="4"/>
-              <line x1="0" y1="20" x2="23" y2="20" stroke-width="4"/>
+          <button class="main-nav__close-button" type="button"><span class="visually-hidden">Закрыть</span>
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none">
+              <line class="main-nav__close-cross" x1="2" y1="1" x2="22" y2="21" stroke-width="4"/>
+              <line class="main-nav__close-cross" x1="2" y1="21" x2="22" y2="1" stroke-width="4"/>
             </svg>
           </button>
           <ul class="main-nav__list" >
@@ -39,10 +30,19 @@
               <a class="main-nav__link" href="">Html Academy</a>
             </li>
           </ul>
+          <div class="main-nav__controls">
+            <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть</span>
+              <svg class="main-nav__open-lines" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                <line x1="0" y1="2" x2="23" y2="2" stroke-width="4"/>
+                <line x1="0" y1="11" x2="23" y2="11" stroke-width="4"/>
+                <line x1="0" y1="20" x2="23" y2="20" stroke-width="4"/>
+              </svg>
+            </button>
+          </div>
         </nav>
-        <div class="logo-decoration">
-          <a href="" class="page-header__logo">
-            <img class="page-header__logo-img" src="img/sedona-logo.png" alt="Город Седона" width="282" height="49">
+        <div class="header-decoration">
+          <a class="page-header__logo">
+            <img src="/img/logotype-mobile.png" alt="Логотип">
           </a>
         </div>
       </div>
@@ -54,77 +54,88 @@
         <h1 class="visually-hidden">Городок Седона</h1>
 
         <header class="main-header page-main__header">
-          <p class="main-header__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="main-header__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <h2 class="visually-hidden">Причины посетить Седону</h2>
+          <p class="main-header__title">Седона — небольшой<br class="page__text-formating"> городок в Аризоне,<br class="page__text-formating"> заслуживающий большего!</p>
+          <p class="main-header__text">Рассмотрим 5 причин, по которым<br class="page__text-formating"> Седона круче, чем гранд каньон!</p>
         </header>
 
-        <section class="reason page-main__reason">
-          <h2 class="visually-hidden">Причины посетить Седону</h2>
+        <section class="reason-one page-main__reason-one">
+          <div class="reason-info reason-info--main reason-one__info">
+            <h3 class="reason-info__title">Настоящий городок</h3>
+            <p class="reason-info__index">&mdash;№1&mdash;</p>
+            <p class="reason-info__comment">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="reason-one__img-frame">
+            <picture class="reason-one__picture">
+              <source srcset="img/index/city-desktop.jpg" media="(min-width: 1280px)">
+              <source srcset="img/index/city-tablet.jpg" media="(min-width: 768px)">
+              <img class="reason-one__picture-content" src="img/index/city-mobile-full.jpg" alt="Вид на двухэтажное здание посреди улицы">
+            </picture>
+          </div>
+          <ul class="reason-one__list">
+            <li class="reason-one__item reason-one__item--housing">
+              <p class="reason-one__item-title">Жилье</p>
+              <p class="reason-one__item-description">Рекомендуем пожить в настоящем<br class="page__text-formating page__text-formating--desktop"> мотеле, все как в кино!</p>
+            </li>
+            <li class="reason-one__item reason-one__item--souvenir">
+              <p class="reason-one__item-title">Сувениры</p>
+              <p class="reason-one__item-description">Не только китайского,<br class="page__text-formating page__text-formating--desktop"> но и местного производства!</p>
+            </li>
+            <li class="reason-one__item reason-one__item--food">
+              <p class="reason-one__item-title">Еда</p>
+              <p class="reason-one__item-description">Всегда заказывайте<br class="page__text-formating"> фирменный бургер,<br class="page__text-formating page__text-formating--tablet"> Вы&nbsp;не разочаруетесь!</p>
+            </li>
+          </ul>
+        </section>
 
-          <section class="reason-one">
-            <div class="reason-info reason-one__info">
-              <h3 class="reason-info__title">Настоящий городок</h3>
-              <p class="reason-info__index">-№1-</p>
-              <p class="reason-info__comment">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            </div>
-            <img class="reason-one__picture" src="#" alt="Двухэтажное здание посреди улицы на фоне гор." width="320" height="260">
-            <ul class="reason-one__list">
-              <li class="reason-one__item reason-one__item--housing">
-                <p class="reason-one__item-title">Жилье</p>
-                <p class="reason-one__item-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </li>
-              <li class="reason-one__item reason-one__item--souvenir">
-                <p class="reason-one__item-title">Сувениры</p>
-                <p class="reason-one__item-description">Не только китайского, но и местного производства!</p>
-              </li>
-              <li class="reason-one__item reason-one__item--food">
-                <p class="reason-one__item-title">Еда</p>
-                <p class="reason-one__item-description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-              </li>
-            </ul>
-          </section>
-
-          <section class="reason-two">
-            <div class="reason-info reason-two__info">
-              <h3 class="reason-info__title">Там есть мост дьявола</h3>
-              <p class="reason-info__index">-№2-</p>
-              <p class="reason-info__comment">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            </div>
-              <img class="reason-two__picture" src="#" alt="Вид на тонкую перемычку природного происхождения пежду двумя сторонами каньона" width="320" height="260">
-          </section>
-
-          <section class="other-reasons">
-            <div class="reason-info reason-info--color">
-              <h3 class="reason-info__title reason-info__title--color">Небольшая прощадь</h3>
-              <p class="reason-info__index reason-info__index--color">-№3-</p>
-              <p class="reason-info__comment reason-info__comment--color">Все интересные места находятся очень близко</p>
-            </div>
-            <div class="reason-info reason-info--color">
-              <h3 class="reason-info__title reason-info__title--color">Красивая дорога</h3>
-              <p class="reason-info__index reason-info__index--color">-№4-</p>
-              <p class="reason-info__comment reason-info__comment--color">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </div>
-            <div class="reason-info reason-info--color">
-              <h3 class="reason-info__title reason-info__title--color">Мало туристов</h3>
-              <p class="reason-info__index reason-info__index--color">-№5-</p>
-              <p class="reason-info__comment reason-info__comment--color">Большинство едет в Гранд Каньон и толпится там</p>
-            </div>
-          </section>
-
-          <div class="interest reason__interest">
-            <p class="interest__title">Заинтересовались?</p>
-            <p class="interest__instruction">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <a href="" class="button interest__redirection">Найти гостиницу</a>
+        <section class="reason-two">
+          <div class="reason-info reason-info--second reason-two__info">
+            <h3 class="reason-info__title">Там есть мост&nbsp;дьявола</h3>
+            <p class="reason-info__index">&mdash;№2&mdash;</p>
+            <p class="reason-info__comment reason-info__comment--second">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+            <div class="reason-two__img-frame">
+              <picture class="reason-two__picture">
+                <source srcset="img/index/bridge-desktop.jpg" media="(min-width: 1280px)">
+                <source srcset="img/index/bridge-tablet.jpg" media="(min-width: 768px)">
+                <img class="reason-two__picture-content" src="img/index/bridge-mobile-full.jpg" alt="Вид на тонкую перемычку природного происхождения пежду двумя сторонами каньона">
+              </picture>
           </div>
         </section>
+
+        <section class="other-reasons page-main__other-reasons">
+          <div class="reason-info other-reasons__reason reason-info--secondary">
+            <h3 class="reason-info__title reason-info__title--secondary">Небольшая площадь</h3>
+            <p class="reason-info__index reason-info__index--secondary">&mdash;№3&mdash;</p>
+            <p class="reason-info__comment reason-info__comment--secondary">Все интересные места находятся очень близко</p>
+          </div>
+          <div class="reason-info  other-reasons__reason reason-info--secondary">
+            <h3 class="reason-info__title reason-info__title--secondary">Красивая дорога</h3>
+            <p class="reason-info__index reason-info__index--secondary">&mdash;№4&mdash;</p>
+            <p class="reason-info__comment reason-info__comment--secondary">Ехать в Седону из Лас&#8209;Вегаса<br class="page__text-formating"> совсем не&nbsp;скучно!</p>
+          </div>
+          <div class="reason-info  other-reasons__reason reason-info--secondary">
+            <h3 class="reason-info__title reason-info__title--secondary">Мало туристов</h3>
+            <p class="reason-info__index reason-info__index--secondary">&mdash;№5&mdash;</p>
+            <p class="reason-info__comment reason-info__comment--secondary">Большинство едет в Гранд Каньон<br class="page__text-formating"> и толпится там</p>
+          </div>
+        </section>
+
+        <div class="interest page-main__interest">
+          <p class="interest__title">Заинтересовались?</p>
+          <p class="interest__instruction">Укажите предполагаемые даты поездки,<br class="page__text-formating page__text-formating--tablet"> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <a href="" class="button interest__redirection">Найти гостиницу</a>
+        </div>
       </div>
 
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="map page-footer__map">
+      <div class="page-footer__map">
+        <div class="map">
         </div>
+      </div>
+      <div class="page-footer__wrapper">
         <b class="page-footer__title">#visitsedona</b>
         <div class="social page-footer__social">
           <ul class="social__list">
@@ -146,10 +157,12 @@
           </ul>
         </div>
         <div class="copyright page-footer__copyright">
-          <span class="copyright__title">Разработано</span>
-          <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
-          </svg>
+          <p class="copyright__title">Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copuright__link" aria-label="html-Академия">
+            <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

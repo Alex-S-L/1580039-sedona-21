@@ -1,3 +1,24 @@
 .page-header {
   background-color: $basic-white;
 }
+
+.page-header__wrapper {
+  @media (min-width: $tablet) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  top: -56px;
+  right: 0;
+  left: 0;
+  width: 102px;
+  margin: 0 auto;
+}

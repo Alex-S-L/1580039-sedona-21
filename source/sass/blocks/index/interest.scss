@@ -1,18 +1,32 @@
 .interest {
+  width: 280px;
+
   @media (min-width: $tablet) {
-    width: 435px;
+    width: 458px;
     margin: 0 auto;
   }
 }
 
 .interest__title {
   @include font (700, 21px, 26px, $basic-black);
+  margin-bottom: 22px;
 
   @media (min-width: $tablet) {
     font-size: 30px;
+    margin-bottom: 34px;
   }
 }
 
 .interest__instruction {
   @include font (400, 14px, 24px, $basic-black);
+  padding-bottom: 14px;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 29px;
+  }
 }

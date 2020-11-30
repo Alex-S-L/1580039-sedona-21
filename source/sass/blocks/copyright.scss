@@ -1,5 +1,11 @@
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
 .copyright__title {
   @include font (400, 14px, 26px, $basic-black);
+  margin-right: 12px;
 }
 
 .copyright__icon {

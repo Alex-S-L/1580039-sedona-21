@@ -1,0 +1,41 @@
+.header-decoration {
+  position: relative;
+  height: 389px;
+  justify-content: center;
+  background: url("../img/index/intro-words-top.svg") no-repeat 50% 90px,
+    url("../img/intro-words-middle.png") no-repeat 50% 173px,
+    url("../img/index/intro-words-bottom.svg") no-repeat 46% 255px,
+    url("../img/intro-bottom.svg") no-repeat 50% 100%,
+    url("../img/intro-back.jpg") no-repeat 50% 0% / 900px 389px;
+
+  @media (min-width: $tablet) {
+    height: 517px;
+    background: url("../img/index/intro-words-top.svg") no-repeat 50% 76px / 257px 85px,
+      url("../img/intro-words-middle.png") no-repeat 50% 212px / 460px 80px,
+      url("../img/index/intro-words-bottom.svg") no-repeat 48% 346px / 295px 79px,
+      url("../img/intro-bottom.svg") no-repeat 50% 100%,
+      url("../img/intro-back.jpg") no-repeat 50% 0% / 1200px 518px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 517px;
+    background: url("../img/index/intro-words-top.svg") no-repeat 50% 76px / 257px 85px,
+      url("../img/intro-words-middle.png") no-repeat 50% 212px / 460px 80px,
+      url("../img/index/intro-words-bottom.svg") no-repeat 49% 346px / 295px 79px,
+      url("../img/intro-bottom.svg") no-repeat 50% 100%,
+      url("../img/intro-back.jpg") no-repeat 50% 0% / 1200px 518px;
+  }
+}
+
+.header-decoration--secondary {
+  height: 190px;
+  justify-content: center;
+  background: url("../img/intro-bottom.svg") no-repeat 50% 100%,
+    url("../img/intro-back.jpg") no-repeat 50% 100%;
+
+  @media (min-width: $tablet) {
+    height: 290px;
+    background: url("../img/intro-bottom.svg") no-repeat 50% 100%,
+      url("../img/intro-back.jpg") no-repeat 50% 100%;
+  }
+}
