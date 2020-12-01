@@ -1,11 +1,9 @@
 @media (max-width: $mobile) {
   .page-main__wrapper {
-    width: 320px;
     margin: 0 auto;
   }
 
   .page-main__header {
-    width: 275px;
     margin: 0 auto;
   }
 }
@@ -18,7 +16,7 @@
 
   .page-main__header {
     width: 490px;
-    margin: 0 auto;
+    margin: 44px auto 54px;
   }
 }
 
@@ -27,4 +25,36 @@
     width: 1200px;
     margin: 0 auto;
   }
+
+  .page-main__header {
+    margin: 44px auto 42px;
+  }
+}
+
+.page-main__reason-one {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 57px;
+  }
+}
+
+.page-main__other-reasons {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 92px;
+  }
+}
+
+.page-main__interest {
+  margin: 0 auto;
 }

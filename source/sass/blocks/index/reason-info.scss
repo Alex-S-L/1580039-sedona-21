@@ -1,35 +1,92 @@
 .reason-info {
   background-color: $basic-blue;
+  padding: 21px 0 35px 0;
+
+  @media (min-width: $tablet) {
+    padding: 21px 33px 35px 33px;
+  }
+}
+
+.reason-info--second {
+  @media (min-width: $desktop) {
+    padding: 24px 33px 35px 33px;
+  }
 }
 
 .reason-info__title {
   @include font (700, 18px, 26px, $basic-white);
+  margin: 18px 0 11px 0;
 
   @media (min-width: $tablet) {
     font-size: 21px;
+    margin: 20px 0 13px 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 27px 60px 13px 60px;
   }
 }
 
 .reason-info__index {
   @include font (400, 14px, 21px, $basic-white);
+  margin: 11px 0 11px 0;
 }
 
 .reason-info__comment {
   @include font (400, 14px, 21px, $basic-white);
+  margin: 17px 0 0 0;
+
+  @media (min-width: $tablet) {
+    margin: 23px 0 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 23px 35px 0 35px;
+  }
 }
 
-.reason-info--color {
+.reason-info__comment--second {
+  @media (min-width: $desktop) {
+    margin: 23px 50px 0 50px;
+  }
+}
+
+.reason-info--main {
+  @media (max-width: $mobile) {
+    background: $basic-blue url("../img/index/main-header-bottom.svg") no-repeat top / 768px 34px;
+    padding: 51px 0 38px 0;
+  }
+}
+
+.reason-info--secondary {
   background-color: $basic-grey;
+  padding: 25px 0 26px 0;
+  width: 260px;
 }
 
-.reason-info__title--color {
+.reason-info__title--secondary {
   color: $basic-black;
+  margin-top: 0;
+
+  @media (min-width: $tablet) {
+    width: 152px;
+    margin: 17px auto 14px;
+  }
 }
 
-.reason-info__index--color {
+.reason-info__index--secondary {
   color: $dark-grey;
 }
 
-.reason-info__comment--color {
+.reason-info__comment--secondary {
   color: $dark-grey;
+
+  @media (min-width: $tablet) {
+    width: 179px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 290px;
+    margin: 23px 0 0 0;
+  }
 }

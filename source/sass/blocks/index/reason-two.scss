@@ -8,8 +8,20 @@
     grid-column: -2/-1;
   }
 
-  .reason-two__picture {
+  .reason-two__img-frame {
     grid-column: 1/3;
     grid-row: 1/2;
   }
+}
+
+.reason-two__img-frame {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.reason-two__picture,
+.reason-two__picture-content {
+  display: block;
 }

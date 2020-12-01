@@ -1,12 +1,19 @@
 .page-footer__title {
   @include font (700, 21px, 26px, $basic-black);
+  margin-bottom: 32px;
 }
 
 .social__list {
+  width: 151px;
   display: flex;
+  justify-content: space-between;
   list-style: none;
-  margin: 0;
+  margin: 0 0 32px 0;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    padding-right: 9px;
+  }
 }
 
 .social__link {
@@ -14,10 +21,6 @@
   width: 46px;
   height: 48px;
   background-color: $basic-blue;
-}
-
-.social-item {
-  margin-left: 6px;
 }
 
 .social__link--twitter {
