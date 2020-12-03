@@ -10,19 +10,10 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav">
-          <div class="main-nav__decoration">
-          </div>
-          <button class="main-nav__close-button" type="button" aria-lable="Открыть меню">
-            <svg class="main-nav__close-cross" width="23" height="23" viewBox="0 0 23 23" fill="none">
-              <line x1="1" y1="1" x2="22" y2="22" stroke-width="3"/>
-              <line x1="1" y1="22" x2="22" y2="1" stroke-width="3"/>
-            </svg>
-          </button>
-          <button class="main-nav__open-button" type="button" aria-lable="Открыть меню">
-            <svg class="main-nav__open-lines" width="23" height="23" viewBox="0 0 23 23" fill="none">
-              <line x1="0" y1="2" x2="23" y2="2" stroke-width="4"/>
-              <line x1="0" y1="11" x2="23" y2="11" stroke-width="4"/>
-              <line x1="0" y1="20" x2="23" y2="20" stroke-width="4"/>
+          <button class="main-nav__close-button" type="button"><span class="visually-hidden">Закрыть</span>
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none">
+              <line class="main-nav__close-cross" x1="2" y1="1" x2="22" y2="21" stroke-width="4"/>
+              <line class="main-nav__close-cross" x1="2" y1="21" x2="22" y2="1" stroke-width="4"/>
             </svg>
           </button>
           <ul class="main-nav__list" >
@@ -39,10 +30,19 @@
               <a class="main-nav__link" href="">Html Academy</a>
             </li>
           </ul>
+          <div class="main-nav__controls">
+            <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть</span>
+              <svg class="main-nav__open-lines" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                <line x1="0" y1="2" x2="23" y2="2" stroke-width="4"/>
+                <line x1="0" y1="11" x2="23" y2="11" stroke-width="4"/>
+                <line x1="0" y1="20" x2="23" y2="20" stroke-width="4"/>
+              </svg>
+            </button>
+          </div>
         </nav>
-        <div class="logo-decoration logo-decoration--secondary">
-          <a href="" class="page-header__logo page-header__logo--secondary">
-            <img class="page-header__logo-img"src="img/sedona-logo.png" alt="Город Седона" width="282" height="49">
+        <div class="header-decoration header-decoration--secondary">
+          <a class="page-header__logo">
+            <img src="img/logotype-mobile.png" alt="Логотип">
           </a>
         </div>
       </div>
@@ -54,46 +54,50 @@
         <h1 class="visually-hidden">Форма обратной связи</h1>
 
         <header class="main-header page-main__header">
-            <p class="main-header__title">Оставьте свой отзыв</p>
-            <p class="main-header__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посешенных вами достопримечательностях</p>
+            <p class="main-header__title main-header__title--margin main-header__title--size">Оставьте свой отзыв</p>
+            <p class="main-header__text main-header__text--line-height">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посешенных вами достопримечательностях</p>
         </header>
 
         <form class="form page-main__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form-fieldset form__naming-group">
             <legend class="visually-hidden">Представьтесь:</legend>
-            <p class="form__title form__title--lines">Представьтесь:</p>
-            <div class="form__naming-unit">
-              <label class="form__get-text-label" for="first-name">Имя*:</label>
-              <input class="form__input-text" type="text" id="first-name" name="first-name" placeholder="Пётр" pattern="[A-Za-zА-Яа-яЁё]{15}">
-            </div>
-            <div class="form__naming-unit">
-              <label class="form__get-text-label" for="last-name">Фамилия*:</label>
-              <input class="form__input-text" type="text" id="last-name" name="last-name" placeholder="Иванов" pattern="[A-Za-zА-Яа-яЁё]{15}">
-            </div>
-            <div class="form__naming-unit">
-              <label class="form__get-text-label" for="patronymic">Отчество:</label>
-              <input class="form__input-text" type="text" id="patronymic" name="patronymic" placeholder="Александрович" pattern="[A-Za-zА-Яа-яЁё]{15}">
-            </div>
+            <p class="form__title form__title--naming">Представьтесь:</p>
+            <ul class="form__naming-list">
+              <li class="form__naming-item">
+                <label class="form__naming-label form__get-text-label" for="first-name">Имя*:</label>
+                <input class="form__naming-input form__input-text" type="text" size="10" id="first-name" name="first-name" placeholder="Петр" pattern="[A-Za-zА-Яа-яЁё]{15}">
+              </li>
+              <li class="form__naming-item">
+                <label class="form__naming-label form__get-text-label" for="last-name">Фамилия*:</label>
+                <input class="form__naming-input form__input-text" type="text" id="last-name"  placeholder="Иванов" pattern="[A-Za-zА-Яа-яЁё]{15}">
+              </li>
+              <li class="form__naming-item">
+                <label class="form__naming-label form__get-text-label" for="patronymic">Отчество:</label>
+                <input class="form__naming-input form__input-text" type="text" id="patronymic" name="patronymic" placeholder="Александрович" pattern="[A-Za-zА-Яа-яЁё]{15}">
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="form-fieldset form__contacs-group">
             <legend class="visually-hidden">Контактная информация:</legend>
-            <p class="form__title form__title--lines">Контактная информация:</p>
-            <div class="from-contacts-unit">
-              <label class="form__get-text-label" for="phone">Контактный телефон*:</label>
-              <input class="form__input-text form__input-text--phone" type="text" id="phone" name="phone" placeholder="Введите телефон">
-              <div class="form__phone-icon"></div>
-            </div>
-            <div class="from-contacts-unit">
-              <label class="form__get-text-label" for="email">Электронная почта*:</label>
-              <input class="form__input-text form__input-text--email" type="email" id="email" name="e-mail" placeholder="Введите e-mail">
-              <div class="form__email-icon"></div>
-            </div>
+            <p class="form__title form__title--lines form__title--contacts form__title--lines">Контактная информация:</p>
+            <ul class="form__contacts-list">
+              <li class="from__contacts-item">
+                <label class="form__get-text-label form__get-text-label--margin" for="phone"><span class="form__desktop-hidden">Контактный </span>телефон*:</label>
+                <input class="form__input-text form__input-text--contacts" type="text" id="phone" name="phone" placeholder="Введите телефон">
+                <div class="form__phone-icon"></div>
+              </li>
+              <li class="from__contacts-item">
+                <label class="form__get-text-label form__get-text-label--margin" for="email">Электронная почта*:</label>
+                <input class="form__input-text form__input-text--contacts" type="email" id="email" name="e-mail" placeholder="Введите e-mail">
+                <div class="form__email-icon"></div>
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="form-fieldset form__impressions-group">
             <legend class="visually-hidden">Ваше общее впечатление:</legend>
-            <p class="form__title form__title--lines">Ваше общее впечатление:</p>
+            <p class="form__title form__title--impressions">Ваше общее впечатление:</p>
             <ul class="form__radio-list">
               <li class="form__radio-item">
                 <input class="form__radio-input visually-hidden" type="radio" name="impressions" id="rather-positive" checked>
@@ -112,7 +116,7 @@
 
           <fieldset class="form-fieldset form__landmarks-group">
             <legend class="visually-hidden">Посещенные достопримечательности:</legend>
-            <p class="form__title form__title--lines">Посещенные достопримечательности:</p>
+            <p class="form__title form__title--landmarks form__title--lines">Посещенные <br class="page__text-formating page__text-formating--tablet"> достопримечательности:</p>
             <ul class="form__landmarks-list">
               <li class="form__landmarks-item">
                 <input class="form__checkbox-input visually-hidden" type="checkbox" name="bridge" id="bridge" checked>
@@ -135,13 +139,13 @@
 
           <fieldset class="form-fieldset form__describe-emotions-group">
             <legend class="visually-hidden">Опишите свои эмоции</legend>
-            <p class="form__title form__title--lines">Опишите свои эмоции:</p>
+            <p class="form__title form__title--lines form__title--textarea form__title--lines">Опишите свои эмоции:</p>
             <textarea class="form__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
 
           <div class="form__send-group">
-            <button class="button form__send-button" type="submit">Отправить отзыв</button>
-            <p class="form__legend">*-Обязательные поля</p>
+            <button class="button button--form-send form__send-button" type="submit">Отправить отзыв</button>
+            <p class="form__legend">*&ensp;&mdash;Обязательные поля</p>
           </div>
         </form>
       </div>
@@ -149,7 +153,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <b class="social__title">#visitsedona</b>
+        <b class="page-footer__title">#visitsedona</b>
         <div class="social page-footer__social">
           <ul class="social__list">
             <li class="social__item">
@@ -169,11 +173,13 @@
             </li>
           </ul>
         </div>
-        <div class=" copyright page-footer__copyright">
-          <span class="copyright__title">Разработано</span>
-          <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
-          </svg>
+        <div class="copyright page-footer__copyright">
+          <p class="copyright__title">Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copuright__link" aria-label="html-Академия">
+            <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
