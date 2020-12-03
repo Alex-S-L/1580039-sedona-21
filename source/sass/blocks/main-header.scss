@@ -16,6 +16,28 @@
   }
 }
 
+.main-header__title--margin {
+  margin: 36px 0 28px;
+
+  @media (min-width: $tablet) {
+    margin: 62px 0 33px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 112px 0 31px;
+  }
+}
+
+.main-header__title--size {
+  @media (min-width: $tablet) {
+    font-size: 30px;
+  }
+}
+
 .main-header__text {
   @include font (400, 14px, 26px, $dark-grey);
+}
+
+.main-header__text--line-height {
+  line-height: 24px;
 }
