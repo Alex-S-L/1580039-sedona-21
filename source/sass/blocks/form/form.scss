@@ -155,6 +155,14 @@
   background-color: $text-input-color;
 }
 
+.form__input-text:hover {
+  background-color: $hover-grey;
+}
+
+.form__input-text:active {
+  background-color: $basic-white;
+}
+
 .form__input-text::-webkit-input-placeholder {
   @include font (700, 18px, 26px, $dark-grey);
   font-family: "PT Sans", sans-serif;
@@ -440,6 +448,7 @@
   height: 160px;
   box-sizing: border-box;
   border: none;
+  background-color: $text-area-input;
 
   @media (min-width: $tablet) {
     padding: 18px 0 32px 21px;
@@ -448,6 +457,14 @@
   @media (min-width: $desktop) {
     padding: 18px 0 29px 21px;
   }
+}
+
+.form__textarea:hover {
+  background-color: $hover-grey;
+}
+
+.form__textarea:active {
+  background-color: $basic-white;
 }
 
 .form__textarea::-webkit-input-placeholder {

@@ -5,15 +5,26 @@
 }
 
 .video__controls {
+  width: 280px;
+  margin: 0 auto;
+
   @media (min-width: $tablet) {
+    padding-bottom: 14px;
+    padding-top: 14px;
+    width: 648px;
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
   }
+
+  @media (min-width: $desktop) {
+    width: 800px;
+  }
 }
 
 .video__player {
+  display: block;
   background-color: $basic-black;
 
   @media (max-width: $mobile) {
@@ -34,8 +45,30 @@
 
 .video__button {
   border: none;
-  position: relative;
   background-color: transparent;
+}
+
+.video__button-replay {
+  padding: 22px 27px 20px 25px;
+  float: left;
+
+  @media (min-width: $tablet) {
+    margin-left: 10px;
+  }
+}
+
+.video__button-fullscreen {
+  padding: 23px 23px 20px 15px;
+  float: right;
+
+  @media (min-width: $tablet) {
+    margin-right: 18px;
+  }
+}
+
+.video__button-subtitles {
+  padding: 23px 16px 20px 25px;
+  float: right;
 }
 
 .video__element-outline {
@@ -62,12 +95,4 @@
   .video__button:active .video__element-outline {
     fill-opacity: 0.3;
   }
-}
-
-.video__button-left {
-  float: left;
-}
-
-.video__button-right {
-  float: right;
 }
