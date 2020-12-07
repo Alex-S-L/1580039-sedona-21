@@ -1,12 +1,15 @@
 .photo-info {
   text-align: left;
+  padding-top: 11px;
 
   @media (min-width: $tablet) {
+    padding: 15px 20px 0 20px;
     display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop) {
+    padding: 15px 20px 8px 20px;
     background-color: $basic-t-black;
     position: absolute;
     bottom: 0;
@@ -15,8 +18,19 @@
   }
 }
 
+.photo-info--secondary {
+  @media (min-width: $tablet) {
+    padding: 15px 32px 0 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 15px 32px 8px 20px;
+  }
+}
+
 .photo-info__name {
   @include font (700, 14px, 24px, $basic-black);
+  margin: 0 0 1px 0;
 
   @media (min-width: $desktop) {
     color: $basic-white;
@@ -25,14 +39,25 @@
 
 .photo-info__author {
   @include font (400, 14px, 24px, $dark-grey);
+  text-transform: none;
+  margin: 0 0 7px 0;
 
   @media (min-width: $desktop) {
     color: $basic-white;
   }
 }
 
+.photo-info__evaluation {
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    padding-top: 10px;
+  }
+}
+
 .photo-info__like-counter {
   @include font (700, 14px, 24px, $basic-black);
+  vertical-align: 2px;
 
   @media (min-width: $desktop) {
     color: $basic-white;
@@ -44,8 +69,13 @@
 }
 
 .photo-info__like {
+  padding: 3px 10px 0 0;
   border: none;
   background-color: transparent;
+
+  @media (min-width: $tablet) {
+    padding: 3px 5px 0 0;
+  }
 }
 
 .photo-info__like-stroke {

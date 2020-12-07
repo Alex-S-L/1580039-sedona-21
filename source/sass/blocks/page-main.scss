@@ -3,6 +3,10 @@
     margin: 0 auto;
   }
 
+  .page-main__wrapper--catalog {
+    margin: 0 20px;
+  }
+
   .page-main__header {
     margin: 0 auto;
   }
@@ -61,4 +65,30 @@
 
 .page-main__form {
   margin: 17px 20px 0;
+}
+
+.page-main__gallery {
+  margin: 32px 0 0 0;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 57px auto 0 0;
+  }
+}
+
+.page-main__presentation {
+  @media (max-width: $mobile) {
+    margin: 32px auto 79px;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 57px auto 76px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 61px auto 121px;
+  }
 }

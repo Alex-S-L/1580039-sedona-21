@@ -28,6 +28,18 @@
   }
 }
 
+.main-header__title--margin-catalog {
+  margin: 32px 0 28px;
+
+  @media (min-width: $tablet) {
+    margin: 63px 0 35px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 100px 0 34px;
+  }
+}
+
 .main-header__title--size {
   @media (min-width: $tablet) {
     font-size: 30px;
