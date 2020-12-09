@@ -21,4 +21,8 @@
   left: 0;
   width: 102px;
   margin: 0 auto;
+
+  @media (min-width: $desktop) {
+    width: 186px;
+  }
 }

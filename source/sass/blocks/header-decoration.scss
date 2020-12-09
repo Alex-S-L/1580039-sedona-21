@@ -54,22 +54,30 @@
 .header-decoration--secondary {
   height: 158px;
   justify-content: center;
-
   background: url("../img/intro-words-middle.svg") no-repeat 50% 52px / 230px 40px,
     url("../img/intro-bottom.svg") no-repeat 50% 101% / 1201px 58px,
-    url("../img/form/form-mobile-intro-bottom.jpg") no-repeat 50%;
+    url("../img/form/secondary-intro-back.jpg") no-repeat 50% 100% / 902px 214px;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/intro-words-middle.svg") no-repeat 50% 52px / 230px 40px,
+      url("../img/intro-bottom.svg") no-repeat 50% 101% / 1201px 58px,
+      url("../img/form/secondary-intro-back@2x.jpg") no-repeat 50% 100% / 902px 214px;
+  }
 
   @media (min-width: $tablet) {
     height: 290px;
-    background: url("../img/secondary-intro-midde-words.svg") no-repeat 50% 95px,
+    background: url("../img/secondary-intro-midde-words.svg") no-repeat 50% 95px / 458px 78px,
       url("../img/intro-bottom.svg") no-repeat 50% 100%,
-      url("../img/intro-back.jpg") no-repeat 50% 100%;
+      url("../img/form/secondary-intro-back-tablet-desktop.jpg") no-repeat 50% 100% / 1200px 518px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/intro-words-middle.svg") no-repeat 50% 95px / 458px 78px,
+        url("../img/intro-bottom.svg") no-repeat 50% 101% / 1201px 58px,
+        url("../img/form/secondary-intro-back-tablet-desktop@2x.jpg") no-repeat 50% 100% / 1200px 518px;
+    }
   }
 
   @media (min-width: $desktop) {
     height: 301px;
-    background: url("../img/secondary-intro-midde-words.svg") no-repeat 49.6% 102px / 460px 80px,
-      url("../img/intro-bottom.svg") no-repeat 50% 100%,
-      url("../img/intro-back.jpg") no-repeat 50% 100%;
   }
 }
