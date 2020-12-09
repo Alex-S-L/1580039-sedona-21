@@ -33,6 +33,14 @@
   padding: 17px 20px 15px;
 }
 
+.main-nav__close-button:hover .main-nav__close-cross {
+  opacity: 0.6;
+}
+
+.main-nav__close-button:active .main-nav__close-cross {
+  opacity: 0.3;
+}
+
 .main-nav__close-cross {
   stroke: $basic-white;
 
@@ -58,20 +66,27 @@
   stroke: $basic-blue;
 }
 
+.main-nav__open-button:hover .main-nav__open-lines {
+  opacity: 0.6;
+}
+
+.main-nav__open-button:active .main-nav__open-lines {
+  opacity: 0.3;
+}
+
 .main-nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.main-nav__item {
-  background-color: $nav-color;
-  box-shadow: inset 0 -1px 0 rgba(1, 1, 1, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-.main-nav__item--decor {
+.main-nav__item:last-of-type .main-nav__link {
   background: $nav-color linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%) no-repeat bottom / 100% 9px;
+
+  @media (min-width: $tablet) {
+    background: transparent;
+    box-shadow: none;
+  }
 }
 
 .main-nav__link {
@@ -80,17 +95,39 @@
   display: block;
   padding-top: 10px;
   padding-bottom: 6px;
+  background-color: $nav-color;
+  box-shadow: inset 0 -1px 0 rgba(1, 1, 1, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet) {
     @include font (700, 14px, 26px, $basic-black);
     padding-top: 15px;
     padding-bottom: 15px;
+
+    &:hover {
+      color: $hover-blue;
+    }
+
+    &:active {
+      color: $basic-t-black;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    background: transparent;
+    box-shadow: none;
   }
 }
 
-@media (min-width: $tablet) {
-  .main-nav__item {
-    background: transparent;
-    box-shadow: none;
+@media (max-width: $mobile) {
+  .main-nav__link:hover,
+  .main-nav__item:last-of-type .main-nav__link:hover {
+    background-color: $hover-blue;
+  }
+
+  .main-nav__link:active,
+  .main-nav__item:last-of-type .main-nav__link:active {
+    background-color: $item-down-blue;
+    color: $basic-t-white;
   }
 }

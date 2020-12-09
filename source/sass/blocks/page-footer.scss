@@ -45,6 +45,8 @@
 }
 
 .page-footer__copyright {
+  margin-bottom: 12px;
+
   @media (min-width: $tablet) {
     margin-top: -30px;
   }

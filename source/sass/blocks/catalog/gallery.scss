@@ -17,11 +17,13 @@
 .gallery__list--layout {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .gallery__item {
   padding-top: 22px;
   padding-bottom: 17px;
+  position: relative;
 
   @media (min-width: $tablet) {
     padding-top: 22px;
@@ -31,6 +33,30 @@
   @media (min-width: $desktop) {
     position: relative;
     padding-bottom: 0;
+  }
+}
+
+@media (max-width: $mobile) {
+  .gallery__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: $hover-grey;
+  }
+
+  .gallery__item::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: $hover-grey;
   }
 }
 

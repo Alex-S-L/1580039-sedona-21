@@ -1,13 +1,39 @@
 .copyright {
   display: flex;
   align-items: center;
+  padding-top: 9px;
+
+  @media (min-width: $tablet) {
+    padding-top: 19px;
+  }
+}
+
+.copyright__link {
+  text-decoration: none;
 }
 
 .copyright__title {
   @include font (400, 14px, 26px, $basic-black);
-  margin-right: 12px;
+  margin-top: 0;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: 13px;
 }
 
 .copyright__icon {
   fill: $basic-black;
+}
+
+.copyright__link:hover {
+  .copyright__title {
+    opacity: 0;
+  }
+
+  .copyright__icon {
+    fill: $basic-blue;
+  }
+}
+
+.copyright__link:active .copyright__icon {
+  fill: $basic-t-black;
 }

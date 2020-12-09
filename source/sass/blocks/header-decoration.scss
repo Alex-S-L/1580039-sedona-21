@@ -6,7 +6,15 @@
     url("../img/intro-words-middle.svg") no-repeat 50% 173px,
     url("../img/index/intro-words-bottom.svg") no-repeat 46% 255px,
     url("../img/intro-bottom.svg") no-repeat 50% 100%,
-    url("../img/intro-back.jpg") no-repeat 50% 0% / 900px 389px;
+    url("../img/index/intro-back.jpg") no-repeat 50% 0% / 900px 389px;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/index/intro-words-top.svg") no-repeat 50% 90px,
+      url("../img/intro-words-middle.svg") no-repeat 50% 173px,
+      url("../img/index/intro-words-bottom.svg") no-repeat 46% 255px,
+      url("../img/intro-bottom.svg") no-repeat 50% 100%,
+      url("../img/index/intro-back@2x.jpg") no-repeat 50% 0% / 900px 389px;
+  }
 
   @media (min-width: $tablet) {
     height: 517px;
@@ -14,7 +22,15 @@
       url("../img/intro-words-middle.svg") no-repeat 50% 212px / 460px 80px,
       url("../img/index/intro-words-bottom.svg") no-repeat 48% 346px / 295px 79px,
       url("../img/intro-bottom.svg") no-repeat 50% 100%,
-      url("../img/intro-back.jpg") no-repeat 50% 0% / 1200px 518px;
+      url("../img/index/intro-back-tabet-desktop.jpg") no-repeat 50% 0% / 1200px 518px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index/intro-words-top.svg") no-repeat 50% 76px / 257px 85px,
+        url("../img/intro-words-middle.svg") no-repeat 50% 212px / 460px 80px,
+        url("../img/index/intro-words-bottom.svg") no-repeat 48% 346px / 295px 79px,
+        url("../img/intro-bottom.svg") no-repeat 50% 100%,
+        url("../img/index/intro-back-tabet-desktop@2x.jpg") no-repeat 50% 0% / 1200px 518px;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -23,7 +39,15 @@
       url("../img/intro-words-middle.svg") no-repeat 50% 212px / 460px 80px,
       url("../img/index/intro-words-bottom.svg") no-repeat 49% 346px / 295px 79px,
       url("../img/intro-bottom.svg") no-repeat 50% 100%,
-      url("../img/intro-back.jpg") no-repeat 50% 0% / 1200px 518px;
+      url("../img/index/intro-back-tabet-desktop.jpg") no-repeat 50% 0% / 1200px 518px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index/intro-words-top.svg") no-repeat 50% 76px / 257px 85px,
+        url("../img/intro-words-middle.svg") no-repeat 50% 212px / 460px 80px,
+        url("../img/index/intro-words-bottom.svg") no-repeat 48% 346px / 295px 79px,
+        url("../img/intro-bottom.svg") no-repeat 50% 100%,
+        url("../img/index/intro-back-tabet-desktop@2x.jpg") no-repeat 50% 0% / 1200px 518px;
+    }
   }
 }
 
