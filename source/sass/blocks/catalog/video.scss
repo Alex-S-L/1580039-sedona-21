@@ -1,4 +1,6 @@
 .video {
+  position: relative;
+
   @media (min-width: $tablet) {
     position: relative;
   }
@@ -7,12 +9,15 @@
 .video__controls {
   width: 280px;
   margin: 0 auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -66px;
 
   @media (min-width: $tablet) {
     padding-bottom: 14px;
     padding-top: 14px;
     width: 648px;
-    position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
@@ -41,6 +46,41 @@
     width: 800px;
     height: 500px;
   }
+}
+
+.video__bar-container {
+  background-color: $basic-td-black;
+  padding: 20px 20px 20px 20px;
+
+  @media (min-width: $tablet) {
+    padding: 32px 0 27px 0;
+    display: inline-block;
+  }
+}
+
+.video__bar {
+  width: 235px;
+  height: 3px;
+  background-color: $basic-t-white;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    width: 389px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 539px;
+  }
+}
+
+.video__progress-handle {
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  background-color: $basic-white;
+  position: absolute;
+  top: -3px;
+  left: 38px;
 }
 
 .video__button {

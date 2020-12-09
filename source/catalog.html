@@ -41,8 +41,12 @@
           </div>
         </nav>
         <div class="header-decoration header-decoration--secondary">
-          <a class="page-header__logo">
-            <img src="img/logotype-mobile.png" alt="Логотип">
+          <a href="index.html" class="page-header__logo">
+            <picture>
+              <source srcset="img/logo-desktop.svg" media="(min-width: 1280px)">
+              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+              <img src="img/logo-mobile.svg" alt="Логотип">
+            </picture>
           </a>
         </div>
       </div>
@@ -151,6 +155,11 @@
           <video class="video__player" src="#">
           </video>
           <div class="video__controls clearfix">
+            <div class="video__bar-container">
+              <div class="video__bar">
+                <div class="video__progress-handle"></div>
+              </div>
+            </div>
             <button class="video__button video__button-replay"><span class="visually-hidden">Реплей</span>
               <svg width="16" height="20" viewBox="0 0 16 20">
                 <path class="video__element-outline" d="M8 4V0L3 5L8 10V6C11.3 6 14 8.7 14 12C14 15.3 11.3 18 8 18C4.7 18 2 15.3 2 12H0C0 16.4 3.6 20 8 20C12.4 20 16 16.4 16 12C16 7.6 12.4 4 8 4Z"/>
