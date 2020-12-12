@@ -31,6 +31,10 @@
   border: none;
   background: transparent;
   padding: 17px 20px 15px;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .main-nav__close-button:hover .main-nav__close-cross {
@@ -43,10 +47,6 @@
 
 .main-nav__close-cross {
   stroke: $basic-white;
-
-  @media (min-width: $tablet) {
-    display: none;
-  }
 }
 
 .main-nav__controls {
