@@ -40,12 +40,14 @@
           </div>
         </nav>
         <div class="header-decoration">
-          <a href="#" class="page-header__logo">
-            <picture>
-              <source srcset="img/logo-desktop.svg" media="(min-width: 1280px)">
-              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-              <img src="img/logo-mobile.svg" alt="Логотип">
-            </picture>
+          <a href="index.html" class="page-header__logo">
+            <svg>
+              <use class="page-header__logo-outline" xlink:href="img/sprite.svg#logo-outline"></use>
+              <use class="page-header__logo-back" xlink:href="img/sprite.svg#logo-back"></use>
+              <use class="page-header__logo-clouds" xlink:href="img/sprite.svg#logo-clouds"></use>
+              <use class="page-header__logo-base" xlink:href="img/sprite.svg#logo-base"></use>
+              <use class="page-header__logo-else" xlink:href="img/sprite.svg#logo-else"></use>
+            </svg>
           </a>
         </div>
       </div>
