@@ -12,9 +12,8 @@
         <nav class="main-nav">
           <div class="main-nav__container">
             <button class="main-nav__close-button" type="button"><span class="visually-hidden">Закрыть</span>
-              <svg width="23" height="23" viewBox="0 0 23 23" fill="none">
-                <line class="main-nav__close-cross" x1="2" y1="1" x2="22" y2="21" stroke-width="4"/>
-                <line class="main-nav__close-cross" x1="2" y1="21" x2="22" y2="1" stroke-width="4"/>
+              <svg focusable="false" class="main-nav__close-cross" width="23" height="23" viewBox="0 0 23 23">
+                <use xlink:href="img/sprite.svg#close-button"></use>
               </svg>
             </button>
             <ul class="main-nav__list" >
@@ -34,10 +33,8 @@
           </div>
           <div class="main-nav__controls">
             <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть</span>
-              <svg width="23" height="23" viewBox="0 0 23 23" fill="none">
-                <line class="main-nav__open-lines" x1="0" y1="2" x2="23" y2="2" stroke-width="4"/>
-                <line class="main-nav__open-lines" x1="0" y1="11" x2="23" y2="11" stroke-width="4"/>
-                <line class="main-nav__open-lines" x1="0" y1="20" x2="23" y2="20" stroke-width="4"/>
+              <svg focusable="false" class="main-nav__open-lines" width="23" height="23" viewBox="0 0 23 23">
+                <use xlink:href="img/sprite.svg#open-button"></use>
               </svg>
             </button>
           </div>
@@ -73,6 +70,9 @@
           </div>
           <div class="reason-one__img-frame">
             <picture class="reason-one__picture">
+              <source type="image/webp" srcset="img/index/city-desktop.webp, img/index/city-desktop@2x.webp 2x" media="(min-width: 1280px)">
+              <source type="image/webp" srcset="img/index/city-tablet.webp, img/index/city-tablet@2x.webp 2x" media="(min-width: 768px)">
+              <source type="image/webp" srcset="img/index/city-mobile.webp, img/index/city-mobile@2x.webp 2x">
               <source srcset="img/index/city-desktop.jpg, img/index/city-desktop@2x.jpg 2x" media="(min-width: 1280px)">
               <source srcset="img/index/city-tablet.jpg, img/index/city-tablet@2x.jpg 2x" media="(min-width: 768px)">
               <img class="reason-one__picture-content" src="img/index/city-mobile.jpg" srcset="img/index/city-mobile@2x.jpg 2x" alt="Вид на двухэтажное здание посреди улицы">
@@ -102,6 +102,9 @@
           </div>
             <div class="reason-two__img-frame">
               <picture class="reason-two__picture">
+                <source type="image/webp" srcset="img/index/bridge-desktop.webp, img/index/bridge-desktop@2x.webp 2x" media="(min-width: 1280px)">
+                <source type="image/webp" srcset="img/index/bridge-tablet.webp, img/index/bridge-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/index/bridge-mobile.webp, img/index/bridge-mobile@2x.webp 2x">
                 <source srcset="img/index/bridge-desktop.jpg, img/index/bridge-desktop@2x.jpg 2x" media="(min-width: 1280px)">
                 <source srcset="img/index/bridge-tablet.jpg, img/index/bridge-tablet@2x.jpg 2x" media="(min-width: 768px)">
                 <img class="reason-two__picture-content" src="img/index/bridge-mobile.jpg" srcset="img/index/bridge-mobile@2x.jpg 2x" alt="Вид на тонкую перемычку природного происхождения пежду двумя сторонами каньона">
@@ -165,8 +168,8 @@
         <div class="copyright page-footer__copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html-Академия">
             <p class="copyright__title">Разработано</p>
-            <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="copyright__icon" d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+            <svg role="img" focusable="false" class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" fill="none">
+              <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
             </svg>
           </a>
         </div>
