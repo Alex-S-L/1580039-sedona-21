@@ -19,10 +19,25 @@
   top: -56px;
   right: 0;
   left: 0;
-  width: 102px;
+  width: 186px;
   margin: 0 auto;
 
+  &-outline,
+  &-clouds,
+  &-base {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    &-clouds {
+      display: inline;
+    }
+  }
+
   @media (min-width: $desktop) {
-    width: 186px;
+    &-outline,
+    &-base {
+      display: inline;
+    }
   }
 }
