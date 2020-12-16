@@ -80,6 +80,8 @@
 }
 
 .photo-info__like-stroke {
+  fill-opacity: 0.3;
+
   @media (min-width: $desktop) {
     stroke: $basic-white;
     fill: $basic-white;
