@@ -1,3 +1,20 @@
+.main-nav__container--hidden {
+  @media (max-width: $mobile) {
+    display: none;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    transition-duration: 1s;
+    transition-property: height;
+  }
+}
+
+.main-nav__container--visible {
+  @media (max-width: $mobile) {
+    height: 224px;
+  }
+}
 
 @media (min-width: $tablet) {
   .main-nav__list {
