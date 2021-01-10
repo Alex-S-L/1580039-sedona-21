@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="html" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="html" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -65,7 +67,7 @@
 
         <header class="main-header page-main__header">
           <h2 class="visually-hidden">Причины посетить Седону</h2>
-          <p class="main-header__title">Седона — небольшой<br class="page__text-formating"> городок в Аризоне,<br class="page__text-formating"> заслуживающий большего!</p>
+          <p class="main-header__title">Седона — небольшой<br class="page__text-formating"> городок в Аризоне,<br class="page__text-formating">&#32;заслуживающий большего!</p>
           <p class="main-header__text">Рассмотрим 5 причин, по которым<br class="page__text-formating"> Седона круче, чем гранд каньон!</p>
         </header>
 
@@ -82,21 +84,21 @@
               <source type="image/webp" srcset="img/index/city-mobile.webp, img/index/city-mobile@2x.webp 2x">
               <source srcset="img/index/city-desktop.jpg, img/index/city-desktop@2x.jpg 2x" media="(min-width: 1280px)">
               <source srcset="img/index/city-tablet.jpg, img/index/city-tablet@2x.jpg 2x" media="(min-width: 768px)">
-              <img class="reason-one__picture-content" src="img/index/city-mobile.jpg" srcset="img/index/city-mobile@2x.jpg 2x" alt="Вид на двухэтажное здание посреди улицы">
+              <img class="reason-one__picture-content" src="img/index/city-mobile.jpg" srcset="img/index/city-mobile@2x.jpg 2x" width="520" height="260" alt="Вид на двухэтажное здание посреди улицы">
             </picture>
           </div>
           <ul class="reason-one__list">
             <li class="reason-one__item reason-one__item--housing">
               <p class="reason-one__item-title">Жилье</p>
-              <p class="reason-one__item-description">Рекомендуем пожить в настоящем<br class="page__text-formating page__text-formating--desktop"> мотеле, все как в кино!</p>
+              <p class="reason-one__item-description">Рекомендуем пожить в настоящем&#32;<br class="page__text-formating page__text-formating--desktop">  мотеле, все как в кино!</p>
             </li>
             <li class="reason-one__item reason-one__item--souvenir">
               <p class="reason-one__item-title">Сувениры</p>
-              <p class="reason-one__item-description">Не только китайского,<br class="page__text-formating page__text-formating--desktop"> но и местного производства!</p>
+              <p class="reason-one__item-description">Не только китайского,<br class="page__text-formating page__text-formating--desktop">&#32;но и местного производства!</p>
             </li>
             <li class="reason-one__item reason-one__item--food">
               <p class="reason-one__item-title">Еда</p>
-              <p class="reason-one__item-description">Всегда заказывайте<br class="page__text-formating"> фирменный бургер,<br class="page__text-formating page__text-formating--tablet"> Вы&nbsp;не разочаруетесь!</p>
+              <p class="reason-one__item-description">Всегда заказывайте&#32;<br class="page__text-formating">фирменный бургер,<br class="page__text-formating page__text-formating--tablet"> Вы&nbsp;не разочаруетесь!</p>
             </li>
           </ul>
         </section>
@@ -114,7 +116,7 @@
                 <source type="image/webp" srcset="img/index/bridge-mobile.webp, img/index/bridge-mobile@2x.webp 2x">
                 <source srcset="img/index/bridge-desktop.jpg, img/index/bridge-desktop@2x.jpg 2x" media="(min-width: 1280px)">
                 <source srcset="img/index/bridge-tablet.jpg, img/index/bridge-tablet@2x.jpg 2x" media="(min-width: 768px)">
-                <img class="reason-two__picture-content" src="img/index/bridge-mobile.jpg" srcset="img/index/bridge-mobile@2x.jpg 2x" alt="Вид на тонкую перемычку природного происхождения пежду двумя сторонами каньона">
+                <img class="reason-two__picture-content" src="img/index/bridge-mobile.jpg" srcset="img/index/bridge-mobile@2x.jpg 2x" width="520" height="260" alt="Вид на тонкую перемычку природного происхождения пежду двумя сторонами каньона">
               </picture>
           </div>
         </section>
@@ -133,7 +135,7 @@
           <div class="reason-info  other-reasons__reason reason-info--secondary">
             <h3 class="reason-info__title reason-info__title--secondary">Мало туристов</h3>
             <p class="reason-info__index reason-info__index--secondary">&mdash;№5&mdash;</p>
-            <p class="reason-info__comment reason-info__comment--secondary">Большинство едет в Гранд Каньон<br class="page__text-formating"> и толпится там</p>
+            <p class="reason-info__comment reason-info__comment--secondary">Большинство едет в Гранд Каньон<br class="page__text-formating">&#32;и толпится там</p>
           </div>
         </section>
 
@@ -182,7 +184,7 @@
         </div>
       </div>
     </footer>
-  <script src="js/script.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGqsxchj6qsgnu3Z7mza0_2NV5tqfypAc&callback=initMap"></script>
+  <script async src="js/script.min.js"></script>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGqsxchj6qsgnu3Z7mza0_2NV5tqfypAc&callback=initMap"></script>
   </body>
 </html>

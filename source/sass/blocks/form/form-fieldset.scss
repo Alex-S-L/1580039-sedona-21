@@ -8,11 +8,16 @@
 }
 
 @media (max-width: $mobile) {
+  .form-fieldset {
+    overflow: hidden;
+  }
+
   .form-fieldset::before {
     content: "";
     position: absolute;
     top: 0;
-    width: 100%;
+    left: -12px;
+    width: 110%;
     height: 1px;
     background-color: $form-lines;
   }

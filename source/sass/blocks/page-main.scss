@@ -51,11 +51,11 @@
   margin-bottom: 32px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 71px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 92px;
+    margin-bottom: 78px;
   }
 }
 
@@ -81,7 +81,7 @@
 
 .page-main__presentation {
   @media (max-width: $mobile) {
-    margin: 32px auto 79px;
+    margin: 32px auto 145px;
   }
 
   @media (min-width: $tablet) {

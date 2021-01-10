@@ -25,3 +25,13 @@
 .reason-two__picture-content {
   display: block;
 }
+
+.reason-two__picture-content {
+  @media (min-width: $tablet) {
+    height: 256px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 800px;
+  }
+}

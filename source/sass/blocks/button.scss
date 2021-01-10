@@ -24,3 +24,24 @@
 .button:active {
   background-color: $item-down-blue;
 }
+
+.button--failure {
+  @include font (700, 18px, 26px, $basic-white);
+  padding: 18px 78px 14px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    padding: 18px 124px 14px;
+  }
+}
+
+.button--success {
+  @include font (700, 18px, 26px, $basic-white);
+  padding: 18px 76px 14px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    @include font (700, 21px, 26px, $basic-white);
+    padding: 18px 155px 14px;
+  }
+}

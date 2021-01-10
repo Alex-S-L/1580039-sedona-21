@@ -38,6 +38,7 @@
   @include font (700, 18px, 26px, $basic-black);
   text-align: center;
   margin: 21px 0 20px;
+  width: 280px;
 
   @media (min-width: $tablet) {
     font-size: 21px;
@@ -52,9 +53,9 @@
   .form__title--lines::before {
     content: "";
     position: absolute;
-    top: 42%;
-    left: 0;
-    width: 18.98%;
+    top: 28%;
+    left: -66%;
+    width: 44%;
     height: 1px;
     background-color: $form-lines;
   }
@@ -62,18 +63,23 @@
   .form__title--lines::after {
     content: "";
     position: absolute;
-    top: 42%;
-    right: 0;
-    width: 18.98%;
+    top: 28%;
+    right: -66%;
+    width: 44%;
     height: 1px;
     background-color: $form-lines;
   }
+}
 
-  @media (min-width: $desktop) {
-    .form__title--lines::before,
-    .form__title--lines::after {
-      width: 29.1%;
-    }
+@media (min-width: $desktop) {
+  .form__title--lines::before {
+    left: -121%;
+    width: 99.1%;
+  }
+
+  .form__title--lines::after {
+    right: -121%;
+    width: 99.1%;
   }
 }
 
@@ -89,11 +95,11 @@
 
 .form__title--naming {
   @media (min-width: $tablet) {
-    margin: 33px 0 54px -50px;
+    margin: 33px 0 54px 0;
   }
 
   @media (min-width: $desktop) {
-    margin: 19px 0 54px 80px;
+    margin: 18px 0 54px 80px;
     text-align: left;
   }
 }
@@ -103,9 +109,16 @@
   margin-top: 19px;
   margin-bottom: 24px;
   padding: 0;
+  width: 280px;
 
   @media (min-width: $tablet) {
     margin-bottom: 24px;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 24px;
+    width: 480px;
   }
 }
 
@@ -156,6 +169,10 @@
   background-color: $text-input-color;
 }
 
+.form__input-text--error {
+  background-color: $error-red;
+}
+
 .form__input-text:hover {
   background-color: $hover-grey;
 }
@@ -174,11 +191,11 @@
   margin: 21px 0 0 0;
 
   @media (min-width: $tablet) {
-    margin: 35px 0 0 0;
+    margin: 35px auto 0 auto;
   }
 
   @media (min-width: $desktop) {
-    margin: 32px 0 0 0;
+    margin: 32px auto 0 auto;
   }
 }
 
@@ -279,11 +296,11 @@
   margin: 21px 0 37px;
 
   @media (min-width: $tablet) {
-    margin: 33px 0 72px -52px;
+    margin: 33px 0 72px -4px;
   }
 
   @media (min-width: $desktop) {
-    margin: 19px 0 72px -50px;
+    margin: 18px 0 72px 76px;
   }
 }
 
@@ -333,11 +350,11 @@
   margin: 16px 0 36px;
 
   @media (min-width: $tablet) {
-    margin: 24px 0 58px;
+    margin: 24px auto 58px auto;
   }
 
   @media (min-width: $desktop) {
-    margin: 1px 0 59px;
+    margin: 1px auto 59px auto;
   }
 }
 
@@ -435,11 +452,11 @@
   margin-bottom: 14px;
 
   @media (min-width: $tablet) {
-    margin: 23px 0 54px 0;
+    margin: 23px auto 54px auto;
   }
 
   @media (min-width: $desktop) {
-    margin: 20px 0 55px 0;
+    margin: 20px auto 55px auto;
   }
 }
 

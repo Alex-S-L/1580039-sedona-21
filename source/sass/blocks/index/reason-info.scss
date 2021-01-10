@@ -37,7 +37,7 @@
   margin: 17px 0 0 0;
 
   @media (min-width: $tablet) {
-    margin: 23px 0 0 0;
+    margin: 23px 0 0 2px;
   }
 
   @media (min-width: $desktop) {
@@ -62,6 +62,10 @@
   background-color: $basic-grey;
   padding: 25px 0 26px 0;
   width: 260px;
+
+  @media (min-width: $tablet) {
+    padding: 25px 0 40px 0;
+  }
 }
 
 .reason-info__title--secondary {
