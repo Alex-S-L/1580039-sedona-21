@@ -30,6 +30,16 @@
   display: block;
 }
 
+.reason-one__picture-content {
+  @media (min-width: $tablet) {
+    height: 256px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 800px;
+  }
+}
+
 .reason-one__list {
   list-style: none;
   margin: 36px 0 0 0;
@@ -42,7 +52,7 @@
 }
 
 .reason-one__item {
-  margin: 0 0 23px 69px;
+  margin: 0 5px 23px 69px;
   position: relative;
   text-align: left;
 

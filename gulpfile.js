@@ -39,8 +39,7 @@ const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.mozjpeg({progressive: true}),
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.svgo()
+      imagemin.optipng({optimizationLevel: 3})
       ]))
     .pipe(gulp.dest("build/img"))
 }
@@ -150,14 +149,15 @@ exports.watcher = watcher;
 
 const build = gulp.series(
   clean,
+  copy,
   gulp.parallel(
     styles,
     html,
     scripts,
     svgsprite,
-    copy//,
-    //images,
-    //createWebp
+    //copy,
+    images,
+    createWebp
     )
   );
 
@@ -165,14 +165,15 @@ exports.build = build;
 
 exports.default = gulp.series(
   clean,
+  copy,
   gulp.parallel(
     styles,
     html,
     scripts,
     svgsprite,
-    copy//,
-    //images,
-    //createWebp
+    //copy,
+    images,
+    createWebp
   ),
   gulp.series(
     server,
