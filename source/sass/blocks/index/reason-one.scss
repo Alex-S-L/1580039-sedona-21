@@ -47,7 +47,8 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 }
 
@@ -57,13 +58,14 @@
   text-align: left;
 
   @media (min-width: $tablet) {
-    margin: 101px 0 10px;
+    margin: 101px 31px 10px 32px;
     width: 193px;
     text-align: center;
   }
 
 
   @media (min-width: $desktop) {
+    margin: 101px 43px 10px 44px;
     width: 313px;
   }
 }

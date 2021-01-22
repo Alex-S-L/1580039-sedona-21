@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/ptsans.woff2" as="html" crossorigin="anonymous">
-    <link rel="preload" href="fonts/ptsansbold.woff2" as="html" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav">
-          <div class="main-nav__container">
+          <div class="main-nav__container main-nav__container--hidden">
             <button class="main-nav__close-button" type="button"><span class="visually-hidden">Закрыть</span>
               <svg focusable="false" class="main-nav__close-cross" width="23" height="23" viewBox="0 0 23 23">
                 <use xlink:href="img/sprite.svg#close-button"></use>
@@ -25,6 +27,7 @@
               <li class="main-nav__item">
                 <a class="main-nav__link" href="catalog.html">Фото и видео</a>
               </li>
+              <li></li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="form.html">Форма отзыва</a>
               </li>
@@ -32,25 +35,27 @@
                 <a class="main-nav__link" href="">Html Academy</a>
               </li>
             </ul>
-            <div class="main-nav__controls">
-              <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть</span>
-                <svg focusable="false" class="main-nav__open-lines" width="23" height="23" viewBox="0 0 23 23">
-                  <use xlink:href="img/sprite.svg#open-button"></use>
-                </svg>
-              </button>
-            </div>
+          </div>
+          <div class="main-nav__logo-wrapper">
+            <a href="index.html" class="page-header__logo" aria-label="Логотип города Седона">
+              <svg class="page-header__logo-svg" focusable="false" role="img" width="282" height="214">
+                <use class="page-header__logo-outline" xlink:href="img/sprite.svg#logo-outline"></use>
+                <use class="page-header__logo-back" xlink:href="img/sprite.svg#logo-back"></use>
+                <use class="page-header__logo-clouds" xlink:href="img/sprite.svg#logo-clouds"></use>
+                <use class="page-header__logo-base" xlink:href="img/sprite.svg#logo-base"></use>
+                <use class="page-header__logo-else" xlink:href="img/sprite.svg#logo-else"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="main-nav__controls">
+            <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть</span>
+              <svg focusable="false" class="main-nav__open-lines" width="23" height="23" viewBox="0 0 23 23">
+                <use xlink:href="img/sprite.svg#open-button"></use>
+              </svg>
+            </button>
           </div>
         </nav>
         <div class="header-decoration header-decoration--secondary">
-          <a href="index.html" class="page-header__logo" aria-label="Логотип города Седона">
-            <svg class="page-header__logo-svg" focusable="false" role="img" width="230" height="39">
-              <use class="page-header__logo-outline" xlink:href="img/sprite.svg#logo-outline"></use>
-              <use class="page-header__logo-back" xlink:href="img/sprite.svg#logo-back"></use>
-              <use class="page-header__logo-clouds" xlink:href="img/sprite.svg#logo-clouds"></use>
-              <use class="page-header__logo-base" xlink:href="img/sprite.svg#logo-base"></use>
-              <use class="page-header__logo-else" xlink:href="img/sprite.svg#logo-else"></use>
-            </svg>
-          </a>
           <div class="header-decoration__banner-secondary">
             <svg class="header-decoration__banner-secondary-svg" focusable="false" width="230" height="39">
               <use xlink:href="img/sprite.svg#secondary-banner"></use>
@@ -94,14 +99,14 @@
             <legend class="visually-hidden">Контактная информация:</legend>
             <p class="form__title form__title--lines form__title--contacts form__title--lines">Контактная информация:</p>
             <ul class="form__contacts-list">
-              <li class="from__contacts-item">
+              <li class="form__contacts-item">
                 <label class="form__get-text-label form__get-text-label--margin" for="phone"><span class="form__desktop-hidden">Контактный </span>телефон*:</label>
                 <input class="form__input-text form__input-text--contacts form__input-text--phone" type="text" id="phone" name="phone" placeholder="Введите телефон">
                 <div class="form__phone-icon"></div>
               </li>
-              <li class="from__contacts-item">
+              <li class="form__contacts-item">
                 <label class="form__get-text-label form__get-text-label--margin" for="email">Электронная почта*:</label>
-                <input class="form__input-text form__input-text--contacts form__input-text--email" type="text" id="email" name="e-mail" placeholder="Введите e-mail" value="321321312">
+                <input class="form__input-text form__input-text--contacts form__input-text--email" type="text" id="email" name="e-mail" placeholder="Введите e-mail">
                 <div class="form__email-icon"></div>
               </li>
             </ul>
@@ -164,34 +169,36 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <b class="page-footer__title">#visitsedona</b>
-        <div class="social page-footer__social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="">
-                <span class="visually-hidden">Твиттер</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="">
-                <span class="visually-hidden">Фейсбук</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="">
-                <span class="visually-hidden">Ю-туб</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="copyright page-footer__copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html-Академия">
-            <p class="copyright__title">Разработано</p>
-            <svg role="img" focusable="false" class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" fill="none">
-              <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
-            </svg>
-          </a>
+      <div class="page-footer__container page-footer__container--form">
+        <div class="page-footer__wrapper">
+          <b class="page-footer__title">#visitsedona</b>
+          <div class="social page-footer__social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="">
+                  <span class="visually-hidden">Твиттер</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="">
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="">
+                  <span class="visually-hidden">Ю-туб</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright page-footer__copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html-Академия">
+              <p class="copyright__title">Разработано</p>
+              <svg role="img" focusable="false" class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" fill="none">
+                <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
@@ -212,7 +219,6 @@
       </div>
     </div>
 
-    </div>
   <script async src="js/script.min.js"></script>
   </body>
 </html>

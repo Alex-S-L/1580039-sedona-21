@@ -4,32 +4,38 @@
   position: relative;
   height: 389px;
   background: url("../img/intro-bottom.svg") no-repeat 50% 100%,
-    url("../img/index/intro-back.jpg") no-repeat 50% 0% / 900px 389px;
+    url("../img/index/intro-back.jpg") no-repeat 50% 0% / 900px 389px,
+    $header-decoration-back;
 
   @media (min-resolution: 2dppx) {
     background: url("../img/intro-bottom.svg") no-repeat 50% 100%,
-      url("../img/index/intro-back@2x.jpg") no-repeat 50% 0% / 900px 389px;
+      url("../img/index/intro-back@2x.jpg") no-repeat 50% 0% / 900px 389px,
+      $header-decoration-back;
   }
 
   @media (min-width: $tablet) {
     height: 517px;
     background: url("../img/intro-bottom.svg") no-repeat 50% 100%,
-      url("../img/index/intro-back-tabet-desktop.jpg") no-repeat 50% 0% / 1200px 518px;
+      url("../img/index/intro-back-tabet-desktop.jpg") no-repeat 50% 0% / 1200px 518px,
+      $header-decoration-back;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/intro-bottom.svg") no-repeat 50% 100%,
-        url("../img/index/intro-back-tabet-desktop@2x.jpg") no-repeat 50% 0% / 1200px 518px;
+        url("../img/index/intro-back-tabet-desktop@2x.jpg") no-repeat 50% 0% / 1200px 518px,
+        $header-decoration-back;
     }
   }
 
   @media (min-width: $desktop) {
     height: 517px;
     background: url("../img/intro-bottom.svg") no-repeat 50% 100%,
-      url("../img/index/intro-back-tabet-desktop.jpg") no-repeat 50% 0% / 1200px 518px;
+      url("../img/index/intro-back-tabet-desktop.jpg") no-repeat 50% 0% / 1200px 518px,
+      $header-decoration-back;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/intro-bottom.svg") no-repeat 50% 100%,
-        url("../img/index/intro-back-tabet-desktop@2x.jpg") no-repeat 50% 0% / 1200px 518px;
+        url("../img/index/intro-back-tabet-desktop@2x.jpg") no-repeat 50% 0% / 1200px 518px,
+        $header-decoration-back;
     }
   }
 }
@@ -37,32 +43,38 @@
 .header-decoration--secondary {
   height: 158px;
   background: url("../img/intro-bottom.svg") no-repeat 50% 101% / 1201px 58px,
-    url("../img/form/secondary-intro-back.jpg") no-repeat 50% 100% / 902px 214px;
+    url("../img/form/secondary-intro-back.jpg") no-repeat 50% 100% / 902px 214px,
+    $header-decoration-back;
 
   @media (min-resolution: 2dppx) {
     background: url("../img/intro-bottom.svg") no-repeat 50% 101% / 1201px 58px,
-      url("../img/form/secondary-intro-back@2x.jpg") no-repeat 50% 100% / 902px 214px;
+      url("../img/form/secondary-intro-back@2x.jpg") no-repeat 50% 100% / 902px 214px,
+      $header-decoration-back;
   }
 
   @media (min-width: $tablet) {
     height: 290px;
     background: url("../img/intro-bottom.svg") no-repeat 50% 100%,
-      url("../img/form/secondary-intro-back-tablet-desktop.jpg") no-repeat 50% 100% / 1200px 518px;
+      url("../img/form/secondary-intro-back-tablet-desktop.jpg") no-repeat 50% 100% / 1200px 518px,
+      $header-decoration-back;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/intro-bottom.svg") no-repeat 50% 101% / 1201px 58px,
-        url("../img/form/secondary-intro-back-tablet-desktop@2x.jpg") no-repeat 50% 100% / 1200px 518px;
+        url("../img/form/secondary-intro-back-tablet-desktop@2x.jpg") no-repeat 50% 100% / 1200px 518px,
+        $header-decoration-back;
     }
   }
 
   @media (min-width: $desktop) {
     height: 301px;
     background: url("../img/intro-bottom.svg") no-repeat 50% 100%,
-      url("../img/form/secondary-intro-back-tablet-desktop.jpg") no-repeat 50% 100% / 1200px 518px;
+      url("../img/form/secondary-intro-back-tablet-desktop.jpg") no-repeat 50% 100% / 1200px 518px,
+      $header-decoration-back;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/intro-bottom.svg") no-repeat 50% 101% / 1201px 58px,
-        url("../img/form/secondary-intro-back-tablet-desktop@2x.jpg") no-repeat 50% 100% / 1200px 518px;
+        url("../img/form/secondary-intro-back-tablet-desktop@2x.jpg") no-repeat 50% 100% / 1200px 518px,
+        $header-decoration-back;
     }
   }
 }

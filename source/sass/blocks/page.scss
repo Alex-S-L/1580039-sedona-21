@@ -8,6 +8,7 @@
 .page__body {
   min-height: 100%;
   margin: 0;
+  break-inside: avoid;
 }
 
 .visually-hidden {
@@ -21,12 +22,6 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .page__text-formating {

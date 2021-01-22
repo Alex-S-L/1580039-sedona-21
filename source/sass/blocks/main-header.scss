@@ -1,10 +1,19 @@
 .main-header {
   background-color: $basic-white;
+  padding-top: 33px;
+
+  @media (min-width: $tablet) {
+    padding-top: 44px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 56px;
+  }
 }
 
 .main-header__title {
   @include font (700, 18px, 26px, $basic-black);
-  margin: 34px 0 30px;
+  margin: 0 0 30px;
 
   @media (min-width: $tablet) {
     font-size: 21px;
@@ -13,31 +22,32 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 55px 0 31px;
+    margin: 0;
+    margin-bottom: 31px;
   }
 }
 
 .main-header__title--margin {
-  margin: 36px 0 28px;
+  margin: 4px 0 28px;
 
   @media (min-width: $tablet) {
-    margin: 62px 0 33px;
+    margin: 18px 0 33px;
   }
 
   @media (min-width: $desktop) {
-    margin: 112px 0 31px;
+    margin: 56px 0 32px;
   }
 }
 
 .main-header__title--margin-catalog {
-  margin: 32px 0 28px;
+  margin: 0 0 28px;
 
   @media (min-width: $tablet) {
-    margin: 63px 0 35px;
+    margin: 19px 0 35px;
   }
 
   @media (min-width: $desktop) {
-    margin: 100px 0 34px;
+    margin: 44px 0 34px;
   }
 }
 

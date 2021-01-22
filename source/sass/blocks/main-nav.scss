@@ -1,18 +1,13 @@
 .main-nav__container--hidden {
   @media (max-width: $mobile) {
     display: none;
-    height: 0;
-    overflow: hidden;
-    position: relative;
-    z-index: 0;
-    transition-duration: 1s;
-    transition-property: height;
   }
 }
 
 .main-nav__container--visible {
   @media (max-width: $mobile) {
-    height: 224px;
+    display: block;
+    height: auto;
   }
 }
 
@@ -31,12 +26,12 @@
     grid-area: two;
   }
 
-  .main-nav__item:nth-child(3) {
+  .main-nav__item:nth-child(4) {
     grid-area: three;
-    padding-left: 7px;
+    padding-left: 4px;
   }
 
-  .main-nav__item:nth-child(4) {
+  .main-nav__item:nth-child(5) {
     grid-area: four;
   }
 }
@@ -80,6 +75,10 @@
   padding: 16px 20px 13px;
 }
 
+.main-nav__open-button--hidden {
+  opacity: 0;
+}
+
 .main-nav__open-lines {
   stroke: $basic-blue;
 }
@@ -119,21 +118,27 @@
 
   @media (min-width: $tablet) {
     @include font (700, 14px, 26px, $basic-black);
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-    &:hover {
-      color: $hover-blue;
-    }
-
-    &:active {
-      color: $basic-t-black;
-    }
-  }
-
-  @media (min-width: $tablet) {
+    padding-top: 16px;
+    padding-bottom: 14px;
     background: transparent;
     box-shadow: none;
+  }
+
+  &:hover {
+    color: $hover-blue;
+  }
+
+  &:active {
+    color: $basic-t-black;
+  }
+
+  &:focus {
+    color: $basic-brown;
+    outline: none;
+  }
+
+  &:focus:active {
+    color: $basic-t-brown;
   }
 }
 
@@ -147,5 +152,14 @@
   .main-nav__item:last-of-type .main-nav__link:active {
     background-color: $item-down-blue;
     color: $basic-t-white;
+  }
+}
+
+.main-nav__logo-wrapper {
+  position: relative;
+  height: 0;
+
+  @media (min-width: $tablet) {
+    position: static;
   }
 }

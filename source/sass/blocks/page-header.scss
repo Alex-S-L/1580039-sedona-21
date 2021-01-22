@@ -1,11 +1,14 @@
 .page-header {
-  background-color: $basic-white;
+  background-color: $light-grey;
 }
 
 .page-header__wrapper {
+  background-color: $basic-white;
+
   @media (min-width: $tablet) {
     width: 768px;
     margin: 0 auto;
+    box-shadow: 0 15px 15px $page-shadow-black;
   }
 
   @media (min-width: $desktop) {
@@ -16,11 +19,12 @@
 
 .page-header__logo {
   position: absolute;
-  top: -56px;
+  top: 0;
   right: 0;
   left: 0;
   width: 186px;
   margin: 0 auto;
+  z-index: 2;
 
   &-svg {
     width: 186px;

@@ -2,6 +2,8 @@
 $basic-blue: #81b3d2;
 $hover-blue: #669ec0;
 $item-down-blue: #5496bd;
+$basic-brown: #766357;
+$basic-t-brown: rgba(118, 99, 87, 0.3);
 $basic-grey: #eeeeee;
 $dark-grey: #333333;
 $light-grey: #f2f2f2;
@@ -14,6 +16,7 @@ $basic-black: #000000;
 $basic-t-black: rgba(0, 0, 0, 0.3);
 $basic-td-black: rgba(0, 0, 0, 0.6);
 $shadow-black: rgba(0, 1, 1, 0.15);
+$page-shadow-black: rgba(0, 1, 1, 0.2);
 $basic-white: #ffffff;
 $basic-t-white: rgba(255, 255, 255, 0.2);
 $error-red: rgba(255, 25, 0, 0.8);
@@ -23,12 +26,13 @@ $nav-color: $basic-blue;
 $text-input-color: $light-grey;
 $form-lines: $weird-grey;
 $text-area-input: $light-grey;
+$header-decoration-back: #6d879c;
 
 // viewport
 
 $mobile: 767px;
 $tablet: 768px;
-$desktop: 1280px;
+$desktop: 1200px;
 
 // mixins
 @mixin font ($font-weight, $font-size, $line-height, $color) {

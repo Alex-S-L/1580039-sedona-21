@@ -1,6 +1,18 @@
+.page-main {
+  background-color: $light-grey;
+  overflow: hidden;
+}
+
+.page-main--catalog {
+  @media (max-width: $mobile) {
+    background-color: $basic-white;
+  }
+}
+
 @media (max-width: $mobile) {
   .page-main__wrapper {
     margin: 0 auto;
+    background-color: $basic-white;
   }
 
   .page-main__wrapper--catalog {
@@ -16,11 +28,13 @@
   .page-main__wrapper {
     width: 768px;
     margin: 0 auto;
+    background-color: $basic-white;
+    box-shadow: 0 0 15px $page-shadow-black;
   }
 
   .page-main__header {
     width: 490px;
-    margin: 44px auto 54px;
+    margin: 0 auto 54px;
   }
 }
 
@@ -31,7 +45,8 @@
   }
 
   .page-main__header {
-    margin: 44px auto 42px;
+    margin: 0 auto 42px;
+    padding-top: 55px;
   }
 }
 
@@ -81,14 +96,28 @@
 
 .page-main__presentation {
   @media (max-width: $mobile) {
-    margin: 32px auto 145px;
+    margin: 32px auto 64px;
   }
 
   @media (min-width: $tablet) {
-    margin: 57px auto 76px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop) {
-    margin: 61px auto 121px;
+    margin: 0 auto;
+  }
+}
+
+.page-main__presentation-container {
+  @media (min-width: $tablet) {
+    background-color: white;
+    width: 768px;
+    margin: 0 auto;
+    box-shadow: 0 14px 15px $page-shadow-black;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1200px;
+    margin: 0 auto;
   }
 }
