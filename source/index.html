@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/ptsans.woff2" as="html" crossorigin="anonymous">
-    <link rel="preload" href="fonts/ptsansbold.woff2" as="html" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav">
-          <div class="main-nav__container">
+          <div class="main-nav__container main-nav__container--hidden">
             <button class="main-nav__close-button" type="button"><span class="visually-hidden">Закрыть</span>
               <svg focusable="false" class="main-nav__close-cross" width="23" height="23" viewBox="0 0 23 23">
                 <use xlink:href="img/sprite.svg#close-button"></use>
@@ -25,6 +27,7 @@
               <li class="main-nav__item">
                 <a class="main-nav__link" href="catalog.html">Фото и видео</a>
               </li>
+              <li></li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="form.html">Форма отзыва</a>
               </li>
@@ -32,6 +35,17 @@
                 <a class="main-nav__link" href="">Html Academy</a>
               </li>
             </ul>
+          </div>
+          <div class="main-nav__logo-wrapper">
+            <a href="index.html" class="page-header__logo" aria-label="Логотип города Седона">
+              <svg class="page-header__logo-svg" focusable="false" role="img" width="282" height="214">
+                <use class="page-header__logo-outline" xlink:href="img/sprite.svg#logo-outline"></use>
+                <use class="page-header__logo-back" xlink:href="img/sprite.svg#logo-back"></use>
+                <use class="page-header__logo-clouds" xlink:href="img/sprite.svg#logo-clouds"></use>
+                <use class="page-header__logo-base" xlink:href="img/sprite.svg#logo-base"></use>
+                <use class="page-header__logo-else" xlink:href="img/sprite.svg#logo-else"></use>
+              </svg>
+            </a>
           </div>
           <div class="main-nav__controls">
             <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть</span>
@@ -42,15 +56,6 @@
           </div>
         </nav>
         <div class="header-decoration">
-          <a href="index.html" class="page-header__logo" aria-label="Логотип города Седона">
-            <svg class="page-header__logo-svg" focusable="false" role="img" width="282" height="214">
-              <use class="page-header__logo-outline" xlink:href="img/sprite.svg#logo-outline"></use>
-              <use class="page-header__logo-back" xlink:href="img/sprite.svg#logo-back"></use>
-              <use class="page-header__logo-clouds" xlink:href="img/sprite.svg#logo-clouds"></use>
-              <use class="page-header__logo-base" xlink:href="img/sprite.svg#logo-base"></use>
-              <use class="page-header__logo-else" xlink:href="img/sprite.svg#logo-else"></use>
-            </svg>
-          </a>
           <div class="header-decoration__banner">
             <svg class="header-decoration__banner-svg" focusable="false" width="282" height="214">
               <use xlink:href="img/sprite.svg#main-banner"></use>
@@ -79,10 +84,10 @@
           </div>
           <div class="reason-one__img-frame">
             <picture class="reason-one__picture">
-              <source type="image/webp" srcset="img/index/city-desktop.webp, img/index/city-desktop@2x.webp 2x" media="(min-width: 1280px)">
+              <source type="image/webp" srcset="img/index/city-desktop.webp, img/index/city-desktop@2x.webp 2x" media="(min-width: 1200px)">
               <source type="image/webp" srcset="img/index/city-tablet.webp, img/index/city-tablet@2x.webp 2x" media="(min-width: 768px)">
               <source type="image/webp" srcset="img/index/city-mobile.webp, img/index/city-mobile@2x.webp 2x">
-              <source srcset="img/index/city-desktop.jpg, img/index/city-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+              <source srcset="img/index/city-desktop.jpg, img/index/city-desktop@2x.jpg 2x" media="(min-width: 1200px)">
               <source srcset="img/index/city-tablet.jpg, img/index/city-tablet@2x.jpg 2x" media="(min-width: 768px)">
               <img class="reason-one__picture-content" src="img/index/city-mobile.jpg" srcset="img/index/city-mobile@2x.jpg 2x" width="520" height="260" alt="Вид на двухэтажное здание посреди улицы">
             </picture>
@@ -111,10 +116,10 @@
           </div>
             <div class="reason-two__img-frame">
               <picture class="reason-two__picture">
-                <source type="image/webp" srcset="img/index/bridge-desktop.webp, img/index/bridge-desktop@2x.webp 2x" media="(min-width: 1280px)">
+                <source type="image/webp" srcset="img/index/bridge-desktop.webp, img/index/bridge-desktop@2x.webp 2x" media="(min-width: 1200px)">
                 <source type="image/webp" srcset="img/index/bridge-tablet.webp, img/index/bridge-tablet@2x.webp 2x" media="(min-width: 768px)">
                 <source type="image/webp" srcset="img/index/bridge-mobile.webp, img/index/bridge-mobile@2x.webp 2x">
-                <source srcset="img/index/bridge-desktop.jpg, img/index/bridge-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+                <source srcset="img/index/bridge-desktop.jpg, img/index/bridge-desktop@2x.jpg 2x" media="(min-width: 1200px)">
                 <source srcset="img/index/bridge-tablet.jpg, img/index/bridge-tablet@2x.jpg 2x" media="(min-width: 768px)">
                 <img class="reason-two__picture-content" src="img/index/bridge-mobile.jpg" srcset="img/index/bridge-mobile@2x.jpg 2x" width="520" height="260" alt="Вид на тонкую перемычку природного происхождения пежду двумя сторонами каньона">
               </picture>
@@ -142,49 +147,52 @@
         <div class="interest page-main__interest">
           <p class="interest__title">Заинтересовались?</p>
           <p class="interest__instruction">Укажите предполагаемые даты поездки,<br class="page__text-formating page__text-formating--tablet"> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <a href="" class="button interest__redirection">Найти гостиницу</a>
+          <a href="" class="button interest__redirection button--disabled">Найти гостиницу</a>
         </div>
       </div>
 
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__map">
-        <div class="map" id="map">
+      <div class="page-footer__container page-footer__container--index">
+        <div class="page-footer__map">
+          <div class="map" id="map">
+          </div>
         </div>
-      </div>
-      <div class="page-footer__wrapper">
-        <b class="page-footer__title">#visitsedona</b>
-        <div class="social page-footer__social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="">
-                <span class="visually-hidden">Твиттер</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="">
-                <span class="visually-hidden">Фейсбук</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="">
-                <span class="visually-hidden">Ю-туб</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="copyright page-footer__copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html-Академия">
-            <p class="copyright__title">Разработано</p>
-            <svg role="img" focusable="false" class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" fill="none">
-              <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
-            </svg>
-          </a>
+        <div class="page-footer__wrapper page-footer__wrapper--index">
+          <b class="page-footer__title">#visitsedona</b>
+          <div class="social page-footer__social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="">
+                  <span class="visually-hidden">Твиттер</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="">
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="">
+                  <span class="visually-hidden">Ю-туб</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright page-footer__copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html-Академия">
+              <p class="copyright__title">Разработано</p>
+              <svg role="img" focusable="false" class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" fill="none">
+                <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
-  <script async src="js/script.min.js"></script>
+
+  <script defer src="js/script.min.js"></script>
   <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGqsxchj6qsgnu3Z7mza0_2NV5tqfypAc&callback=initMap"></script>
   </body>
 </html>

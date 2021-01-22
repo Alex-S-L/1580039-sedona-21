@@ -33,6 +33,18 @@ const styles = () => {
 
 exports.styles = styles;
 
+const stylesNotMin = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest("build/css"))
+}
+
+exports.stylesNotMin = stylesNotMin;
+
 // Images
 
 const images = () => {
@@ -152,6 +164,7 @@ const build = gulp.series(
   copy,
   gulp.parallel(
     styles,
+    stylesNotMin,
     html,
     scripts,
     svgsprite,
@@ -168,6 +181,7 @@ exports.default = gulp.series(
   copy,
   gulp.parallel(
     styles,
+    stylesNotMin,
     html,
     scripts,
     svgsprite,

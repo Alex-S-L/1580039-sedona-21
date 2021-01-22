@@ -1,24 +1,18 @@
+// Открытие\закрытие меню
 let openButton = document.querySelector(".main-nav__open-button");
 let closeButton = document.querySelector(".main-nav__close-button");
 let navigationBox = document.querySelector(".main-nav__container");
-// Кнопка открытия меню
-navigationBox.classList.add("main-nav__container--hidden");
-openButton.addEventListener("click", function(){
-  navigationBox.style.display = "block";
-  setTimeout(function(){
-    navigationBox.classList.toggle("main-nav__container--visible");
-  }, 100)
 
+openButton.addEventListener("click", function(){
+  navigationBox.classList.add("main-nav__container--visible")
+  openButton.classList.add("main-nav__open-button--hidden")
 })
 
 closeButton.addEventListener("click", function(){
-  navigationBox.classList.remove("main-nav__container--visible");
+  navigationBox.classList.remove("main-nav__container--visible")
+  openButton.classList.remove("main-nav__open-button--hidden")
 })
 
-
-navigationBox.addEventListener("transitionend", function(){
-  navigationBox.style.display = (navigationBox.style.display == "none") ? "none" : "block";
-})
 
 // Валидация формы
 

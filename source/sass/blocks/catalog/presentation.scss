@@ -1,21 +1,24 @@
 .presentation {
   @media (max-width: $mobile) {
     width: 320px;
+    background-color: $basic-white;
   }
 
   @media (min-width: $tablet) {
     width: 648px;
+    padding: 57px 0 2px;
   }
 
   @media (min-width: $desktop) {
     width: 800px;
+    padding: 61px 0 21px;
   }
 }
 
 .presentation__header {
   @media (min-width: $tablet) {
     width: 505px;
-    margin: 0 auto 80px auto;
+    margin: 0 auto 78px auto;
   }
 
   @media (min-width: $desktop) {

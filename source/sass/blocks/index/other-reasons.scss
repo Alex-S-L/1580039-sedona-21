@@ -9,16 +9,19 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 }
 
 .other-reasons__reason {
   @media (min-width: $tablet) {
     width: 183px;
+    margin: 0 35px 0 37px;
   }
 
   @media (min-width: $desktop) {
     width: 290px;
+    margin: 0 57px 0 53px;
   }
 }
