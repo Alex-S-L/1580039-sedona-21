@@ -3,8 +3,11 @@ let openButton = document.querySelector(".main-nav__open-button");
 let closeButton = document.querySelector(".main-nav__close-button");
 let navigationBox = document.querySelector(".main-nav__container");
 
+navigationBox.classList.add("main-nav__container--hidden")
+openButton.classList.remove("main-nav__open-button--hidden")
 openButton.addEventListener("click", function(){
   navigationBox.classList.add("main-nav__container--visible")
+  closeButton.classList.remove("main-nav__close-button--hidden")
   openButton.classList.add("main-nav__open-button--hidden")
 })
 

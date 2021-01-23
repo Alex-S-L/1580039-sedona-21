@@ -49,6 +49,10 @@
   }
 }
 
+.main-nav__close-button--hidden {
+  display: none;
+}
+
 .main-nav__close-button:hover .main-nav__close-cross {
   opacity: 0.6;
 }
@@ -133,12 +137,7 @@
   }
 
   &:focus {
-    color: $basic-brown;
-    outline: none;
-  }
-
-  &:focus:active {
-    color: $basic-t-brown;
+    outline-offset: -2px;
   }
 }
 
@@ -161,5 +160,34 @@
 
   @media (min-width: $tablet) {
     position: static;
+  }
+}
+
+.main-nav__link--current {
+  @media (min-width: $tablet) {
+    color: $basic-brown;
+
+    &:hover {
+      color: $basic-brown;
+    }
+
+    &:active {
+      color: $basic-t-brown;
+    }
+  }
+}
+
+.main-nav__link--disabled {
+  @media (max-width: $mobile) {
+    background-color: $hover-grey;
+  }
+}
+
+.main-nav__item,
+.main-nav__item:last-of-type {
+  @media (max-width: $mobile) {
+    .main-nav__link--disabled {
+      background-color: $hover-grey;
+    }
   }
 }

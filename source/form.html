@@ -14,8 +14,8 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav">
-          <div class="main-nav__container main-nav__container--hidden">
-            <button class="main-nav__close-button" type="button"><span class="visually-hidden">Закрыть</span>
+          <div class="main-nav__container">
+            <button class="main-nav__close-button main-nav__close-button--hidden" type="button"><span class="visually-hidden">Закрыть</span>
               <svg focusable="false" class="main-nav__close-cross" width="23" height="23" viewBox="0 0 23 23">
                 <use xlink:href="img/sprite.svg#close-button"></use>
               </svg>
@@ -29,10 +29,10 @@
               </li>
               <li></li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Форма отзыва</a>
+                <a class="main-nav__link main-nav__link--current" href="form.html">Форма отзыва</a>
               </li>
               <li class="main-nav__item main-nav__item--decor">
-                <a class="main-nav__link" href="">Html Academy</a>
+                <a class="main-nav__link  main-nav__link--disabled" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
               </li>
             </ul>
           </div>
@@ -48,7 +48,7 @@
             </a>
           </div>
           <div class="main-nav__controls">
-            <button class="main-nav__open-button" type="button"><span class="visually-hidden">Открыть</span>
+            <button class="main-nav__open-button main-nav__open-button--hidden" type="button"><span class="visually-hidden">Открыть</span>
               <svg focusable="false" class="main-nav__open-lines" width="23" height="23" viewBox="0 0 23 23">
                 <use xlink:href="img/sprite.svg#open-button"></use>
               </svg>

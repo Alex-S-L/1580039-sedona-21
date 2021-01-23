@@ -192,6 +192,20 @@
   text-transform: none;
 }
 
+.form__input-text::-moz-placeholder {
+  @include font (700, 18px, 26px, $basic-black);
+  font-family: "PT Sans", sans-serif;
+  text-transform: none;
+  opacity: 1;
+}
+
+.form__input-text::placeholder {
+  @include font (700, 18px, 26px, $basic-black);
+  font-family: "PT Sans", sans-serif;
+  text-transform: none;
+  opacity: 1;
+}
+
 .form__title--contacts {
   margin: 18px 0 0 0;
 
@@ -556,10 +570,24 @@
   box-shadow: inset 0 0 0 6px $hover-grey;
 }
 
-.form__textarea::-webkit-input-placeholder, {
+.form__textarea::-webkit-input-placeholder {
   @include font (700, 18px, 26px, $basic-black);
   font-family: "PT Sans", sans-serif;
   text-transform: none;
+}
+
+.form__textarea::-moz-placeholder {
+  @include font (700, 18px, 26px, $basic-black);
+  font-family: "PT Sans", sans-serif;
+  text-transform: none;
+  opacity: 1;
+}
+
+.form__textarea::placeholder {
+  @include font (700, 18px, 26px, $basic-black);
+  font-family: "PT Sans", sans-serif;
+  text-transform: none;
+  opacity: 1;
 }
 
 .form__send-group {
